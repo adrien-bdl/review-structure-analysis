@@ -108,23 +108,40 @@ df_1 = anchor_similarity(
 
 ## 3. Overall sentiment
 
-model_path = snapshot_download(
-    repo_id="cardiffnlp/twitter-roberta-base-sentiment",
-    cache_dir="final_pipeline/models/overall_sentiment"
-)
-
 classifier = pipeline(
     "sentiment-analysis",
     model=model_path,
+    top_k=None,
+    batch_size=32,
+    device=device
 )
 
 final_label = {'LABEL_0': 'Negative', 'LABEL_1': 'Neutral', 'LABEL_2': 'Positive'}
 
+def process_results(raw_results):
+    continuous_scores = []
+    categorical_labels = []
+    
+    for result in raw_results:
+        scores = {res['label']: res['score'] for res in result}
+    
+        p_pos = scores.get('LABEL_2', 0.0)
+        p_neu = scores.get('LABEL_1', 0.0)
+        p_neg = scores.get('LABEL_0', 0.0)
+        
+        c_score = round((p_pos * 1) + (p_neu * 0) + (p_neg * -1),2)
+        continuous_scores.append(c_score)
+        
+        categorical_labels.append(result[0]['label'])
+        
+    return continuous_scores, categorical_labels
 
 texts = df_1["finalReview"].tolist()
+raw_output = classifier(texts)
 
-results = classifier(texts, batch_size=32)
-df_1["Overall_review_sentiment"] = [final_label[r["label"]] for r in results]
+c_scores, labels = process_results(raw_output)
+
+df_1["Overall_review_sentiment"] = c_scores
 
 
 ## 4. Satisfaction final
