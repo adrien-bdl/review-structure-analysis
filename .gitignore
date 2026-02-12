@@ -3,6 +3,11 @@ final_pipeline/models/embedding_models
 final_pipeline/models/ft_llama_models
 final_pipeline/models/llama_models
 final_pipeline/models/overall_sentiment
+llama_model
+llama-sentiment-rl
+venv
+
+
 
 
 

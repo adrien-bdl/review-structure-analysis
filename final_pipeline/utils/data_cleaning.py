@@ -17,13 +17,13 @@ def safe_detect(text):
     except LangDetectException:
         return "unknown"
 
-def clean_data(df):
+def clean_data(df, review_col):
 
-    df["finalReview"] = df["finalReview"].fillna("").astype(str)
+    df[review_col] = df[review_col].fillna("").astype(str)
 
     df['ID'] = df.index.astype(int)
     df['ID'] += 1  # Start IDs from 1 instead of 0
 
-    df['lang'] = df['finalReview'].apply(safe_detect)
+    df['lang'] = df[review_col].apply(safe_detect)
 
     return df

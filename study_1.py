@@ -23,7 +23,7 @@ df_1 = pd.read_excel("./data/initial_data/Study 1 reviews.xlsx")
 
 ## Data cleaning
 
-df_1 = clean_data(df_1)
+df_1 = clean_data(df_1, "finalReview")
 
 
 ## 1. Attribute presence

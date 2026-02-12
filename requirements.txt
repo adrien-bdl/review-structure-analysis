@@ -2,9 +2,11 @@ accelerate
 python-dotenv
 torch
 pandas
+openpyxl
 numpy
 sentence-transformers
 python-dotenv
 huggingface_hub
 transformers
 langdetect
+scikit-learn
