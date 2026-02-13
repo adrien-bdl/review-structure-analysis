@@ -6,8 +6,5 @@ final_pipeline/models/overall_sentiment
 llama_model
 llama-sentiment-rl
 venv
-
-
-
-
-
+**/__pycache__/
+*.pyc

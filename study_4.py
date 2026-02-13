@@ -108,9 +108,18 @@ df_4 = anchor_similarity(
 
 ## 3. Overall sentiment
 
+script_dir = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(script_dir, "final_pipeline/models/overall_sentiment/models--cardiffnlp--twitter-roberta-base-sentiment/snapshots")
+
+snapshots = os.listdir(model_path)
+if snapshots:
+    snapshot_dir = os.path.join(model_path, snapshots[0])
+else:
+    raise FileNotFoundError(f"No snapshots found in {model_path}")
+
 classifier = pipeline(
     "sentiment-analysis",
-    model=model_path,
+    model=snapshot_dir,
     top_k=None,
     batch_size=32,
     device=device

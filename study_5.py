@@ -18,12 +18,12 @@ load_dotenv()
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
-df_1 = pd.read_excel("./data/initial_data/Study 1 reviews.xlsx")
+df_5 = pd.read_excel("./data/initial_data/Study 5 reviews.xlsx")
 
 
 ## Data cleaning
 
-df_1 = clean_data(df_1, "finalReview")
+df_5 = clean_data(df_5, "Review")
 
 
 ## 1. Attribute presence
@@ -32,26 +32,26 @@ model_path = "./final_pipeline/models/embedding_models/models--sentence-transfor
 embedding_model = SentenceTransformer(model_path).to(device)
 
 attribute_names = [
-    'cleaning_service_quality',
-    'order_packaging',
-    'communication_and_responsiveness',
-    'Driver_professionalism',
-    'Service_speed'
+    'Cleanliness_and_maintenance',
+    'Waiting_and_queuing_times',
+    'Quality_of_exhibits',
+    'Quantity_of_exhibits',
+    'Helfpulness_of_staff'
 ]
 
 attr_example = [
-    "the cloths are nor ironed, My shirts came back wrinkled still, my order was to dryclean! All suits came back in dirty and smelly! Items have come back still dirty",
-    "The clean laundry came in a bag that had a smell. Even though it was inside a white plastic bag, reusing and mixing dirty bags to carry clean clothes is not ideal, i had specifically asked that all clothes be returned folded in individual plastic bags and they have been sent on hangers.",
-    "i received multiple emails asking if the quotation to clean my two dresses is approved as they were quoted at 120 dhs per dress and i replied to each message asking to proceed and finally my order was cancelled and items return. I have been issued a refund in both cases but could do without the hassle. i have contacted you and sent photos,  you offer a pathetic small credit",
-    "polite, your drivers are always super nice and very professional, drivers extremely friendly",
-    "slow, prompt, efficient, fast. took less than 24 hours, 2 days. I had a lot of delays. Very prompt pickup, collect and the delivery was ahead of schedule, hasn't arrived yet"
+    "hot, air conditioning and ventilation not working, dirty, escalator not working",
+    'huge crowd, this is overwhelming wiht long queues, hope it is was less busy',
+    'No guide, interactive, clear detailed description and information, nice visit, educational for kids, learning, well-organized',
+    'different exhibits, a lot plenty to see, many things',
+    'cashier, unfriendly, helpful staff'
 ]
 
-optimal_thresholds = [0.2094, 0.3296, 0.3485, 0.3290, 0.2749]
+optimal_thresholds = [0.2199, 0.3116, 0.2020, 0.5533, 0.6707]
 
-df_1 = attribute_presence(
-    df=df_1, 
-    reviews_col_name="finalReview", 
+df_5 = attribute_presence(
+    df=df_5, 
+    reviews_col_name="Review", 
     attribute_names=attribute_names, 
     attr_example=attr_example, 
     embedding_model=embedding_model, 
@@ -76,31 +76,31 @@ df_1 = attribute_presence(
 # Anchor similarity #
 
 attribute_anchors = {
-    "cleaning_service_quality": [
-        "Horrible quality wash and folding, clothes came back dirty and not ironed.",
-        "The cleaning service quality was perfect, spotless, and excellent."
+    "Cleanliness_and_maintenance": [
+        "Smelly, AC not working, dirty, escalator not working, very very hot, air conditioning and ventilation not working",
+        "Very clean and confortable, clean and nice atmosphere"
     ],
-    "order_packaging": [
-        "The order packaging was damaged, messy, and poorly handled.",
-        "The order packaging was neat, and very professional, clothes were well folded"
+    "Waiting_and_queuing_times": [
+        "Very dirty",
+        "clean and nice atmosphere"
     ],
-    "communication_and_responsiveness": [
-        "they never replied",
-        "they replied instantly"
+    "Quality_of_exhibits": [
+        "Not engaging and interactive materials and things, no guide, no clear detailed description and information, not educational for kids, learning, not well-organized",
+        "very interesting, fun, interactive, clear detailed description and information, nice visit, educational for kids, learning, well-organized"
     ],
-    "Driver_professionalism": [
-        "not helpful",
-        "your drivers are always super nice and very professional"
+    "Quantity_of_exhibits": [
+        "Limited, not many, not a lot, few, nothing to see",
+        "lots of things to see"
     ],
-    "Service_speed": [
-        "hasn't arrived, lot of delays",
-        "on time, efficient and fast"
+    "Helpfulness_of_staff": [
+        "Unfriendly cashiers, not helpful staff",
+        "staff helped me a lot, super nice smile and warm, supportive"
     ],
 }
 
-df_1 = anchor_similarity(
-    df=df_1,
-    reviews_col_name="finalReview",
+df_5 = anchor_similarity(
+    df=df_5,
+    reviews_col_name="Review",
     embedding_model=embedding_model,
     attribute_anchors=attribute_anchors,
     device=device
@@ -145,42 +145,40 @@ def process_results(raw_results):
         
     return continuous_scores, categorical_labels
 
-texts = df_1["finalReview"].tolist()
+texts = df_5["Review"].tolist()
 raw_output = classifier(texts)
 
 c_scores, labels = process_results(raw_output)
 
-df_1["Overall_review_sentiment"] = c_scores
+df_5["Overall_review_sentiment"] = c_scores
 
 
 ## 4. Satisfaction final
 
-with open('final_pipeline/models/satisfaction_final/ridge_model_study_1.pkl', 'rb') as f:
-    clf_1 = pickle.load(f)
+with open('final_pipeline/models/satisfaction_final/ridge_model_study_5.pkl', 'rb') as f:
+    clf_5 = pickle.load(f)
 
 X = embedding_model.encode(
-    df_1["finalReview"].fillna("").tolist(), 
+    df_5["Review"].fillna("").tolist(), 
     # convert_to_tensor=True
     convert_to_tensor=False
 )
 
-y_pred = clf_1.predict(X)
+y_pred = clf_5.predict(X)
 y_pred_rounded = np.round(y_pred * 2) / 2
-df_1["pred_Satisfaction_final"] = y_pred_rounded
+df_5["pred_Satisfaction_final"] = y_pred_rounded
 
-columns = list(df_1.columns)
+columns = list(df_5.columns)
 for i in range(len(columns)):
     if columns[i] == "Satisfaction_final":
         idx_satif = i
 
 columns = columns[:idx_satif+1] +  ["pred_Satisfaction_final"] + columns[idx_satif+1:]
-df_1["pred_Satisfaction_final"] = y_pred_rounded
-
-df_1 = df_1.loc[:,columns]
+df_5 = df_5.loc[:,columns]
 
 
-df_1.to_excel("./data/final_predictions/xlsx/pred_Study_1_reviews.xlsx")
-df_1.to_csv("./data/final_predictions/csv/pred_Study_1_reviews.csv")
+df_5.to_excel("./data/final_predictions/xlsx/pred_Study_5_reviews.xlsx")
+df_5.to_csv("./data/final_predictions/csv/pred_Study_5_reviews.csv")
 
 print("Dataset with predictions saved")
 

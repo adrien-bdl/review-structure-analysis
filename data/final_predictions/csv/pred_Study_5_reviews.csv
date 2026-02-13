@@ -1,0 +1,718 @@
+,ID,Review,Satisfaction_final,pred_Satisfaction_final,Cleanliness_and_maintenance,Waiting_and_queuing_times,Quality_of_exhibits,Quantity_of_exhibits,Helfpulness_of_staff,Cleanliness_and_maintenance_sentiment,Waiting_and_queuing_times_sentiment,Quality_of_exhibits_sentiment,Quantity_of_exhibits_sentiment,Helfpulness_of_staff_sentiment,Unnamed: 13,Emotional_intensity_LLM,lang,Helpfulness_of_staff_sentiment,Overall_review_sentiment,pred_Satisfaction_final
+0,1,Very bad,1,2.0,0,0,0,0,0,,,,,,,,en,,-0.88,2.0
+1,2,horrible,1,2.0,0,0,0,0,0,,,,,,,,en,,-0.91,2.0
+2,3,Had a bad time here,2,2.5,0,0,0,0,0,,,,,,,,en,,-0.93,2.5
+3,4,Crowded paths,5,4.5,0,1,0,0,0,,4.33,,,,,,en,,0.09,4.5
+4,5,Horrible,1,2.0,0,0,0,0,0,,,,,,,,en,,-0.92,2.0
+5,6,"Too tiring, exhausted by it",4,3.5,0,0,0,0,0,,,,,,,,en,,-0.92,3.5
+6,7,Felt tired and burned out,4,4.0,0,0,0,0,0,,,,,,,,en,,-0.9,4.0
+7,8,dreadful,1,2.5,0,0,0,0,0,,,,,,,,en,,-0.79,2.5
+8,9,Cafteria is a joke,3,4.0,0,0,0,0,0,,,,,,,,en,,-0.84,4.0
+9,10,Restrooms are too hard to find,5,4.0,1,0,0,0,0,4.59,,,,,,,en,,-0.71,4.0
+10,11,don't visit again,1,3.0,0,0,1,0,0,,,6.22,,,,,fr,,-0.64,3.0
+11,12,Loud visitors,5,5.0,0,1,1,0,0,,5.85,5.63,,,,,en,,0.16,5.0
+12,13,Felt dark and claustrophobic in parts,5,3.5,1,0,0,0,0,3.93,,,,,,,en,,-0.89,3.5
+13,14,Just not very good,2,3.0,0,0,0,0,0,,,,,,,,en,,-0.96,3.0
+14,15,"nightmare experience, too tiring",1,2.5,0,0,0,0,0,,,,,,,,en,,-0.94,2.5
+15,16,bad,2,2.0,0,0,0,0,0,,,,,,,,en,,-0.52,2.0
+16,17,Few benches,5,5.0,0,0,0,0,0,,,,,,,,en,,-0.08,5.0
+17,18,Poor descriptions,2,2.5,1,0,1,0,0,3.99,,4.17,,,,,fr,,-0.82,2.5
+18,19,Dirty floors,4,4.0,1,0,0,0,0,4.41,,,,,,,en,,-0.41,4.0
+19,20,Few exhibits,5,5.0,0,0,1,1,0,,,4.91,4.35,,,,en,,-0.04,5.0
+20,21,"no toilet to find, nightmare",2,3.0,1,0,0,0,0,3.17,,,,,,,en,,-0.78,3.0
+21,22,Bad restaurant,2,2.5,1,0,1,0,0,4.63,,4.91,,,,,en,,-0.84,2.5
+22,23,"almost pissed myself, not acceptable",1,3.0,0,0,0,0,0,,,,,,,,en,,-0.94,3.0
+23,24,so bad,1,2.0,0,0,0,0,0,,,,,,,,en,,-0.86,2.0
+24,25,very bad,2,2.0,0,0,0,0,0,,,,,,,,en,,-0.82,2.0
+25,26,awful experience,1,2.0,0,0,0,0,0,,,,,,,,ro,,-0.93,2.0
+26,27,No kids’ area worth mentioning,4,4.5,0,0,1,0,0,,,4.73,,,,,en,,-0.62,4.5
+27,28,"It is a disgrace, so dissapointed",1,2.0,0,0,0,0,0,,,,,,,,en,,-0.95,2.0
+28,29,Very detailed exhibition ,6,6.0,0,0,1,1,0,,,6.14,5.99,,,,en,,0.86,6.0
+29,30,Pretty good,6,5.5,0,0,0,0,0,,,,,,,,en,,0.96,5.5
+30,31,Bit too busy ,4,4.0,0,1,0,0,0,,3.57,,,,,,en,,-0.47,4.0
+31,32,Belle visite,5,5.5,0,0,0,0,0,,,,,,,,en,,0.11,5.5
+32,33,Had a good fun only negative is no AC ,4,5.0,0,0,1,0,0,,,6.33,,,,,en,,0.63,5.0
+33,34,科技感不足，可以再形象生动活泼些,5,5.0,0,0,0,0,0,,,,,,,,ko,,-0.17,5.0
+34,35,It was quite interesting. Especially the history about the beginnings of the Earth.,7,7.0,0,0,1,0,0,,,6.26,,,,,en,,0.96,7.0
+35,36,Impressive!,5,6.0,0,0,0,0,0,,,,,,,,en,,0.9,6.0
+36,37,Hot,4,5.5,0,0,0,0,0,,,,,,,,en,,0.3,5.5
+37,38,Very hot on a day like this but the overall experience was great. Sadly the red zone area was not fully working,6,5.5,0,1,0,0,0,,5.67,,,,,,en,,0.55,5.5
+38,39,Too crowded. The museum needs a makeover. Exhibits should be upgraded,3,3.5,1,1,1,1,0,5.12,6.19,5.41,5.83,,,,en,,-0.39,3.5
+39,40,"Lovely learning experience although it was extremely hot inside the museum, the main escalator was out of service and the food in the dining hall was not up to par ",4,6.0,0,1,1,1,0,,7.06,6.59,6.83,,,,en,,0.47,6.0
+40,41,Fair,5,4.5,0,0,0,0,0,,,,,,,,en,,0.11,4.5
+41,42,"The National Museum of the United Kingdom is impressive, although there are few fans, so it can get hot inside. Overall, though, the collections are excellent!",7,6.5,0,0,1,0,0,,,7.42,,,,,en,,0.98,6.5
+42,43,Too hot today we had to leave. But it seems like a huge museum with lots to see. Especially liked the bugs exhibit ,4,6.0,0,1,1,1,0,,6.28,7.11,6.93,,,,en,,0.92,6.0
+43,44,Underwhelming too many people too interactive ,3,4.0,0,1,1,0,0,,5.07,4.91,,,,,en,,-0.81,4.0
+44,45,"It’s dumbed down, too simple, feels more for children. Should also have areas for more serious ppl too",3,3.5,0,0,1,0,0,,,4.05,,,,,en,,-0.11,3.5
+45,46,Not very stimulating for someone who’s keen on more actual exhibits. Too much of it is virtual ,3,4.5,0,0,1,1,0,,,5.04,5.88,,,,en,,-0.66,4.5
+46,47,Shortened due to heat and density,5,5.0,0,0,0,0,0,,,,,,,,en,,-0.43,5.0
+47,48,Too crowded ,4,3.5,0,1,0,0,0,,5.33,,,,,,en,,-0.7,3.5
+48,49,Too many people are here and cannot really see the display ,4,4.5,0,1,0,0,0,,4.83,,,,,,en,,-0.67,4.5
+49,50,"Fair, control of crowd, too warm ",5,4.5,0,0,1,0,0,,,5.73,,,,,en,,0.51,4.5
+50,51,"Good, ",6,7.0,0,0,0,0,0,,,,,,,,en,,0.7,7.0
+51,52,Not engaging and interactive materials and things,5,3.5,0,0,1,0,0,,,3.42,,,,,en,,-0.46,3.5
+52,53,Too hot and uncomfortable in areas,4,4.0,1,0,0,0,0,3.92,,,,,,,en,,-0.78,4.0
+53,54,Very bad experience overall,1,2.0,0,0,1,0,0,,,4.56,,,,,en,,-0.96,2.0
+54,55,Not good,2,3.0,0,0,0,0,0,,,,,,,,en,,-0.94,3.0
+55,56,Badly organized,2,3.0,1,0,1,0,0,4.27,,3.71,,,,,en,,-0.74,3.0
+56,57,No cafeteria,5,5.0,0,0,0,0,0,,,,,,,,en,,-0.13,5.0
+57,58,not enough seating and resting place,5,4.5,1,1,1,0,0,5.36,6.67,4.61,,,,,en,,-0.7,4.5
+58,59,no place to sit,5,4.0,1,0,0,0,0,4.31,,,,,,,es,,-0.63,4.0
+59,60,not good,3,3.0,0,0,0,0,0,,,,,,,,en,,-0.92,3.0
+60,61,not good,2,3.0,0,0,0,0,0,,,,,,,,en,,-0.92,3.0
+61,62,Few audio guides,5,5.5,0,0,1,0,0,,,4.23,,,,,cy,,-0.02,5.5
+62,63,No Wi-Fi,5,5.0,1,0,0,0,0,2.72,,,,,,,en,,-0.32,5.0
+63,64,Limited seating areas,5,5.0,0,0,0,0,0,,,,,,,,en,,-0.21,5.0
+64,65,Very uncomfortable and smelly,2,3.5,1,0,0,0,0,5.03,,,,,,,en,,-0.95,3.5
+65,66,Few bathrooms,5,4.0,1,0,0,0,0,5.07,,,,,,,en,,-0.22,4.0
+66,67,very bad,2,2.0,0,0,0,0,0,,,,,,,,en,,-0.82,2.0
+67,68,Unfriendly service in cafe,4,4.0,1,0,0,0,0,5.08,,,,,,,en,,-0.95,4.0
+68,69,Did not enjoy at all,4,3.0,0,0,1,0,0,,,5.18,,,,,af,,-0.96,3.0
+69,70,No baby changing area,5,4.5,0,0,0,0,0,,,,,,,,tl,,-0.16,4.5
+70,71,"Dull exhibits, needs work",3,3.5,0,0,1,0,0,,,4.69,,,,,af,,-0.8,3.5
+71,72,No maps,5,4.5,1,0,1,0,0,3.1,,3.6,,,,,en,,-0.18,4.5
+72,73,No tour options and very limited experiences,4,4.5,1,0,1,0,0,5.26,,5.34,,,,,en,,-0.55,4.5
+73,74,Poor experience,2,2.5,0,0,0,0,0,,,,,,,,es,,-0.92,2.5
+74,75,Had difficult time finding things,4,4.5,1,0,1,0,0,4.12,,4.4,,,,,en,,-0.71,4.5
+75,76,Long queues,5,4.5,0,1,0,0,0,,5.62,,,,,,en,,-0.36,4.5
+76,77,Lack of restrooms,5,4.0,1,0,1,0,0,4.69,,3.87,,,,,en,,-0.73,4.0
+77,78,Poor crowd management,2,3.5,1,1,1,0,0,3.76,5.92,3.62,,,,,nl,,-0.86,3.5
+78,79,Few interactive exhibits,5,5.5,0,0,1,1,0,,,4.78,5.23,,,,en,,0.14,5.5
+79,80,toilets too small and crowded. Bad,1,3.0,1,1,1,0,0,5.26,5.46,4.89,,,,,en,,-0.92,3.0
+80,81,Difficult parking and hard to navigate,3,3.5,1,1,1,0,0,4.15,5.7,4.86,,,,,en,,-0.79,3.5
+81,82,Very bad actually,1,2.5,0,0,0,0,0,,,,,,,,en,,-0.92,2.5
+82,83,Boring information,2,3.0,0,0,1,0,0,,,4.53,,,,,en,,-0.94,3.0
+83,84,Few rest stops,5,5.0,0,0,0,0,0,,,,,,,,en,,-0.13,5.0
+84,85,Got lost several times. Difficult to walk around,5,4.5,1,0,1,0,0,5.32,,5.22,,,,,en,,-0.86,4.5
+85,86,Crowded hallways,5,4.5,0,1,0,0,0,,5.51,,,,,,cy,,-0.02,4.5
+86,87,Poor ventilation,3,3.5,1,0,0,0,0,3.35,,,,,,,nl,,-0.86,3.5
+87,88,Unfriendly cashiers,5,5.0,1,0,0,0,1,4.74,,,,,,,en,,-0.92,5.0
+88,89,No kid areas to find,5,4.5,0,0,1,0,0,,,4.47,,,,,en,,-0.19,4.5
+89,90,OK,5,5.0,0,0,0,0,0,,,,,,,,en,,0.13,5.0
+90,91,Very bad,2,2.0,0,0,0,0,0,,,,,,,,en,,-0.88,2.0
+91,92,Didn't like at all,2,3.5,0,0,1,0,0,,,5.94,,,,,af,,-0.94,3.5
+92,93,Noisy crowds,5,4.5,0,1,0,0,0,,5.8,,,,,,en,,-0.26,4.5
+93,94,"no toilet, toilet broken. hated it",1,3.0,1,0,0,0,0,4.28,,,,,,,en,,-0.96,3.0
+94,95,Long lines,5,5.0,0,1,0,0,0,,3.88,,,,,,en,,-0.25,5.0
+95,96,Uncomfortable chairs,5,4.5,0,0,0,0,0,,,,,,,,en,,-0.79,4.5
+96,97,Boring after some time,3,3.5,0,0,0,0,0,,,,,,,,da,,-0.77,3.5
+97,98,"difficult to move around inside, very complicated",5,4.5,1,0,1,0,0,4.71,,3.9,,,,,en,,-0.6,4.5
+98,99,Maps hard to read. Couldn't find anything,5,4.5,0,0,1,0,0,,,4.22,,,,,en,,-0.84,4.5
+99,100,Limited rest spots,5,5.0,1,0,0,0,0,4.99,,,,,,,en,,-0.09,5.0
+100,101,Felt scared,3,4.0,0,0,0,0,0,,,,,,,,en,,-0.66,4.0
+101,102,Expensive entry,5,4.5,0,0,0,0,0,,,,,,,,fr,,-0.17,4.5
+102,103,very bad,2,2.0,0,0,0,0,0,,,,,,,,en,,-0.82,2.0
+103,104,Could be updated and made more modern,4,4.0,1,0,1,0,0,4.55,,4.55,,,,,en,,0.45,4.0
+104,105,Difficult to navigate,5,4.0,0,0,1,0,0,,,4.5,,,,,en,,-0.58,4.0
+105,106,Rushed experience,3,3.5,0,0,0,0,0,,,,,,,,en,,-0.09,3.5
+106,107,Hated the whole thing,1,2.5,0,0,0,0,0,,,,,,,,en,,-0.96,2.5
+107,108,Noisy atmosphere,4,4.5,1,0,0,0,0,4.68,,,,,,,en,,-0.38,4.5
+108,109,dreadful times and experience,1,3.5,0,0,0,0,0,,,,,,,,en,,-0.67,3.5
+109,110,very boring,2,3.5,0,0,1,0,0,,,5.46,,,,,en,,-0.9,3.5
+110,111,No interactive exhibits,5,4.5,0,0,1,0,0,,,3.96,,,,,en,,-0.22,4.5
+111,112,No guidebooks,5,5.0,0,0,1,0,0,,,2.92,,,,,en,,-0.16,5.0
+112,113,Alright overall,5,5.5,0,0,0,0,0,,,,,,,,en,,0.24,5.5
+113,114,no good,2,3.0,0,0,0,0,0,,,,,,,,en,,-0.79,3.0
+114,115,It was a whole lot of fun and very interesting. I’m from the USA and go to museums often and I love how different museum culture is here,7,7.0,0,0,1,1,0,,,7.49,7.25,,,,en,,0.99,7.0
+115,116,"Great! But too many children, it would be good to have adults hour or an adults night ",6,6.0,0,0,1,0,0,,,6.15,,,,,en,,0.16,6.0
+116,117,"I like the dinosaur. Big, too many exhibits ",4,5.5,0,0,1,1,0,,,5.94,7.05,,,,en,,0.8,5.5
+117,118,One of the best exhibitions I have been ,8,7.0,0,1,1,1,0,,6.38,7.1,6.6,,,,en,,0.95,7.0
+118,119,Bardzo fajne muzeum z ekspozycją przystosowaną dla każdego. ,5,5.5,0,0,0,0,0,,,,,,,,pl,,-0.06,5.5
+119,120,"It was busier and hotter than on previous visits, however still a wonderful experience, very proud to have such a place in the uk.",5,6.0,0,1,1,0,0,,6.32,8.0,,,,,en,,0.98,6.0
+120,121,It was amazing how much there was to see and learn about ,9,8.0,0,0,1,1,0,,,7.72,7.2,,,,en,,0.95,8.0
+121,122,"It was extremely hot and crowded which made it difficult to see some exhibitions. However, overall I had a really great time and loved how informative and interactive the displays were",5,5.5,0,1,1,1,0,,6.93,6.52,6.63,,,,en,,0.94,5.5
+122,123,Full of very interesting thing. However was very hot,6,5.5,0,0,1,0,0,,,6.53,,,,,en,,0.97,5.5
+123,124,Fair,4,4.5,0,0,0,0,0,,,,,,,,en,,0.11,4.5
+124,125,Good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.55,7.0
+125,126,"I really loved the dinosaurs display, but it was difficult to walk because of the crowd and the heat.",5,5.5,0,1,1,0,0,,7.07,6.43,,,,,en,,0.68,5.5
+126,127,Good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.55,7.0
+127,128,"Très intéressant, mais il faut avouer que les Dinosaures sont les plus fascinants",5,6.0,0,0,0,0,0,,,,,,,,fr,,-0.02,6.0
+128,129,Many Many people ,4,4.5,0,0,0,0,0,,,,,,,,en,,0.12,4.5
+129,130,it was good,7,6.5,0,0,0,0,0,,,,,,,,en,,0.97,6.5
+130,131,Lots of interesting things so fun to look ,7,7.0,0,0,1,0,0,,,7.05,,,,,en,,0.97,7.0
+131,132,Lovely! Very interesting! Impressive!,8,7.5,0,0,0,0,0,,,,,,,,en,,0.99,7.5
+132,133,Very good top floor of the earthquake ,7,6.5,0,0,0,0,0,,,,,,,,en,,0.92,6.5
+133,134,Good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.55,7.0
+134,135,Very good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.95,7.0
+135,136,Very good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.95,7.0
+136,137,Good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.55,7.0
+137,138,He huido esta mañana con mis hijos y lo hemos pasado muy bien. Todo estaba muy bien conservado y lo disfrutamos muchísimo.,8,5.5,1,0,0,0,0,5.3,,,,,,,es,,-0.12,5.5
+138,139,Exclusive experience ,6,6.0,0,0,0,0,0,,,,,,,,fr,,0.46,6.0
+139,140,"Il museo è molto carino e ampio considerando che è gratuito offre molte aree da visitare, purtroppo non era completamente visitabile durante la mia visita. Consiglio miglioramento del sistema di areazione e magari ridurre il numero di persone orario leggermente",4,5.0,0,0,1,0,0,,,7.26,,,,,it,,-0.04,5.0
+140,141,Great the heat it is too packed ,4,5.5,0,1,0,0,0,,6.55,,,,,,en,,-0.27,5.5
+141,142,Good AC is not working in some room,4,4.5,1,0,0,0,0,3.79,,,,,,,af,,-0.76,4.5
+142,143,Fine too hot enjoy the exhibition ,4,5.0,0,0,0,0,0,,,,,,,,en,,0.96,5.0
+143,144,Good too many people too warm ,4,5.0,0,1,0,0,0,,5.68,,,,,,en,,0.9,5.0
+144,145,"Really fun experience! Great that it is free and so much to see, only issue is when it is so busy in the summer",6,6.5,0,1,1,0,0,,8.14,7.41,,,,,en,,0.98,6.5
+145,146,Educational ,6,5.5,0,0,1,0,0,,,5.28,,,,,en,,0.13,5.5
+146,147,Good ,7,7.0,0,0,0,0,0,,,,,,,,en,,0.71,7.0
+147,148,Very nice of set up colour zone is easier to visit ,4,5.0,0,0,1,0,0,,,5.95,,,,,en,,0.94,5.0
+148,149,Good too hot ,5,6.5,0,0,0,0,0,,,,,,,,en,,0.91,6.5
+149,150,Good experience ,7,7.0,0,0,0,0,0,,,,,,,,en,,0.91,7.0
+150,151,Very educational experience and so much fun for my kids ,6,7.0,0,0,1,0,0,,,6.17,,,,,en,,0.98,7.0
+151,152,River exhibition was good and chill,6,6.0,0,1,1,0,0,,7.23,6.87,,,,,en,,0.96,6.0
+152,153,Very fun too crowded,4,5.0,0,1,1,0,0,,6.19,6.7,,,,,en,,0.96,5.0
+153,154,"Good, very hot, ",6,6.5,0,0,0,0,0,,,,,,,,en,,0.92,6.5
+154,155,Engaging experience ,6,6.0,0,0,1,0,0,,,5.86,,,,,en,,0.46,6.0
+155,156,Coming with the kids and they love it ,7,6.5,0,0,1,0,0,,,7.11,,,,,en,,0.92,6.5
+156,157,"It was really great, the diversity of exhibits was impressive although navigating was a bit confusing ",6,6.5,0,1,1,1,0,,7.48,6.53,6.86,,,,en,,0.96,6.5
+157,158,"Overall a very pleasant experience, though it can be a bit difficult to find your way around.",6,6.5,0,1,1,0,0,,6.5,6.7,,,,,en,,0.74,6.5
+158,159,The exhibition is great  but the building is super hot,7,5.5,1,1,1,0,0,5.88,6.59,6.09,,,,,en,,0.98,5.5
+159,160,Fun to visit and impressive garden ,7,7.0,0,0,1,0,0,,,7.75,,,,,it,,0.97,7.0
+160,161,Good Air quality is not good,4,4.5,1,0,0,0,0,4.68,,,,,,,en,,-0.91,4.5
+161,162,Great ,7,7.5,0,0,0,0,0,,,,,,,,en,,0.74,7.5
+162,163,"Good, more ac ",6,5.0,1,0,0,0,0,4.06,,,,,,,en,,0.78,5.0
+163,164,"Good and busy, more lift and instructions is not clear ",4,5.0,1,0,1,0,0,4.66,,5.87,,,,,en,,-0.07,5.0
+164,165,"Overall good, not much description, ",6,6.0,0,0,1,0,0,,,6.08,,,,,en,,0.88,6.0
+165,166,Really packed and busy but it was good ,6,5.5,0,1,1,0,0,,5.77,7.71,,,,,en,,0.89,5.5
+166,167,"Enjoy, too many people, warm in some room",4,5.5,1,1,0,0,0,6.34,6.65,,,,,,en,,0.87,5.5
+167,168,"Have a good time, instructions to toilet can be better ",4,5.0,0,0,1,0,0,,,6.33,,,,,en,,0.92,5.0
+168,169,"Love it, a bit warm in some room ",5,5.5,0,0,0,0,0,,,,,,,,en,,0.93,5.5
+169,170,"Good, birds ",7,7.0,0,0,0,0,0,,,,,,,,en,,0.78,7.0
+170,171,"Good, more open windows, ",5,5.5,1,0,0,0,0,4.98,,,,,,,en,,0.82,5.5
+171,172,"Like the exhibit, orientation is a bit difficult maybe more path direction, a bit warm in blue zone ",5,5.0,0,0,1,0,0,,,5.22,,,,,en,,-0.3,5.0
+172,173,"Good, exhibition is good overall ",7,6.0,0,1,1,0,0,,5.38,6.21,,,,,en,,0.95,6.0
+173,174,"Smell in the toilet and too warm at the cafe area, great to have more open window ",7,5.0,1,0,0,0,0,4.67,,,,,,,en,,0.77,5.0
+174,175,Very nice and big,7,6.5,0,0,0,0,0,,,,,,,,en,,0.97,6.5
+175,176,Engaging and fun for whole families,6,6.5,0,0,1,0,0,,,5.91,,,,,en,,0.95,6.5
+176,177,Liked it,6,6.0,0,0,0,0,0,,,,,,,,en,,0.93,6.0
+177,178,It was great overall,8,7.0,0,0,0,0,0,,,,,,,,en,,0.98,7.0
+178,179,Good displays,7,6.0,0,0,0,0,0,,,,,,,,en,,0.83,6.0
+179,180,OK,5,5.0,0,0,0,0,0,,,,,,,,en,,0.13,5.0
+180,181,Enjoyable visit,6,7.0,0,0,1,0,0,,,8.36,,,,,fr,,0.95,7.0
+181,182,Nice atmosphere,7,6.5,0,1,0,0,0,,6.09,,,,,,en,,0.94,6.5
+182,183,Engaging activities,6,6.0,0,0,1,0,0,,,5.28,,,,,en,,0.28,6.0
+183,184,Well-organized areas,6,6.0,0,0,1,0,0,,,5.58,,,,,en,,0.44,6.0
+184,185,Good activities,7,6.5,0,0,1,0,0,,,5.92,,,,,en,,0.89,6.5
+185,186,Well-curated exhibits,6,6.0,0,0,1,1,0,,,5.9,5.85,,,,en,,0.56,6.0
+186,187,Comfortable environment,6,6.0,1,0,1,0,0,6.72,,6.27,,,,,fr,,0.81,6.0
+187,188,Great for learning,7,7.0,0,0,1,0,0,,,5.71,,,,,en,,0.92,7.0
+188,189,Good seating,6,6.0,0,1,0,0,0,,6.14,,,,,,en,,0.76,6.0
+189,190,OK,5,5.0,0,0,0,0,0,,,,,,,,en,,0.13,5.0
+190,191,Great tourist visit,7,7.0,0,0,1,0,0,,,7.69,,,,,en,,0.95,7.0
+191,192,There were too many tourists,4,4.5,0,1,1,0,0,,6.45,5.83,,,,,en,,-0.59,4.5
+192,193,Bad,2,2.0,0,0,0,0,0,,,,,,,,en,,-0.4,2.0
+193,194,It was good,7,6.5,0,0,0,0,0,,,,,,,,en,,0.98,6.5
+194,195,Not so good for families,4,5.0,0,0,1,0,0,,,5.21,,,,,en,,-0.94,5.0
+195,196,The museum is fine. Too busy,4,4.0,0,1,1,0,0,,6.26,5.6,,,,,en,,0.41,4.0
+196,197,Can be improved,4,4.0,1,0,1,0,0,4.93,,4.88,,,,,en,,0.47,4.0
+197,198,Overall the museum trip was wonderful and a lot of experience was learnt during this trip. Especially the fossils were extra interesting. The information was given very clearly. 10/10 experience. (Feedback from a 12 years old),9,6.5,0,0,1,0,0,,,6.57,,,,,en,,0.98,6.5
+198,199,OK,5,5.0,0,0,0,0,0,,,,,,,,en,,0.13,5.0
+199,200,It was very interesting to look at all the artifacts and facts about the world ,7,7.5,0,0,1,0,0,,,7.02,,,,,en,,0.92,7.5
+200,201,so much fun!,6,7.0,0,0,0,0,0,,,,,,,,en,,0.97,7.0
+201,202,It was great ,7,7.5,0,0,0,0,0,,,,,,,,en,,0.97,7.5
+202,203,shock,4,4.5,0,0,0,0,0,,,,,,,,en,,-0.32,4.5
+203,204,very good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.94,7.0
+204,205,"First time here, incredible experience. Will come back. Some interactive information would be great.",6,5.5,0,0,1,0,0,,,6.93,,,,,en,,0.97,5.5
+205,206,Brilliant ,8,7.5,0,0,0,0,0,,,,,,,,en,,0.76,7.5
+206,207,The museum is really interesting. Very informative.,7,7.0,0,0,1,1,0,,,7.05,7.44,,,,en,,0.98,7.0
+207,208,Amazing ,8,8.0,0,0,0,0,0,,,,,,,,en,,0.74,8.0
+208,209,"It was an amazing experience. My only drawback is that there was less on arthropods,probably the most diverse group of animals, than I expected.",7,6.5,0,1,1,0,0,,7.13,6.88,,,,,en,,0.87,6.5
+209,210,it is very interesting and everything is good,7,7.0,0,0,1,0,0,,,6.68,,,,,en,,0.99,7.0
+210,211,"It’s an amazing Museum, but I did feel like the Dinosaurs part was too “suffocating”. I am in the autism spectrum and I couldn’t quite handle it because I felt anxious since it was kinda overcrowded and there was only a small path to walk on. ",4,5.5,0,0,1,1,0,,,6.24,7.03,,,,en,,-0.44,5.5
+211,212,Good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.55,7.0
+212,213,Fantastic ,9,8.5,0,0,0,0,0,,,,,,,,en,,0.67,8.5
+213,214,Had fun and discovered and gained more knowledge ,6,6.5,0,0,1,0,0,,,6.37,,,,,en,,0.94,6.5
+214,215,All good,7,5.5,0,0,0,0,0,,,,,,,,en,,0.8,5.5
+215,216,Good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.55,7.0
+216,217,Love the dinosaurs. Favourite museum in London ,8,6.5,0,0,1,0,0,,,7.75,,,,,en,,0.97,6.5
+217,218,Good ,7,7.0,0,0,0,0,0,,,,,,,,en,,0.71,7.0
+218,219,Fantastica,9,7.5,0,0,0,0,0,,,,,,,,en,,-0.01,7.5
+219,220,Great exhibitions ,7,7.5,0,0,1,1,0,,,6.76,6.48,,,,en,,0.83,7.5
+220,221,Una buena experiencia  con muy buenas exposiciones ,7,7.0,0,0,0,0,0,,,,,,,,es,,0.06,7.0
+221,222,"Great for children, very interesting. Just miss some air con ",5,6.5,0,0,1,0,0,,,5.72,,,,,en,,0.94,6.5
+222,223,Engaging info for all ages,6,6.0,0,0,1,0,0,,,5.33,,,,,en,,0.47,6.0
+223,224,"A lovely day out, very interesting and educational.",7,7.5,0,0,1,0,0,,,8.01,,,,,en,,0.98,7.5
+224,225,Una experiencia apasionante acompañado de niñoss,6,5.5,0,0,0,0,0,,,,,,,,es,,-0.07,5.5
+225,226,It was very full and very hot but great as usual ,5,6.0,0,1,1,0,0,,5.5,8.59,,,,,en,,0.97,6.0
+226,227,Good 👍 ,7,7.0,0,0,0,0,0,,,,,,,,en,,0.84,7.0
+227,228,Excellent time. The dinosaurs were really cool. ,9,7.5,0,0,0,0,0,,,,,,,,en,,0.96,7.5
+228,229,Exalin,5,6.0,0,0,0,0,0,,,,,,,,en,,0.02,6.0
+229,230,Its brilliant ,9,7.5,0,0,0,0,0,,,,,,,,en,,0.87,7.5
+230,231,开心,7,6.5,0,0,0,0,0,,,,,,,,en,,-0.1,6.5
+231,232,Very good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.95,7.0
+232,233,Yes I went to the moon,5,5.5,0,0,0,0,0,,,,,,,,en,,0.73,5.5
+233,234,So much to see an learn excellent day out,9,7.5,0,0,1,0,0,,,6.57,,,,,en,,0.96,7.5
+234,235,Very good ,7,7.0,0,0,0,0,0,,,,,,,,en,,0.93,7.0
+235,236,Good ,7,7.0,0,0,0,0,0,,,,,,,,en,,0.71,7.0
+236,237,Good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.55,7.0
+237,238,"The best natural history museum in the world, although they could improve the air conditioning ",5,6.0,1,0,1,1,0,6.0,,6.66,7.62,,,,en,,0.88,6.0
+238,239,Have a good time a bit too warm,5,5.5,0,0,0,0,0,,,,,,,,en,,0.95,5.5
+239,240,Enjoy it very warm ,6,5.5,0,0,0,0,0,,,,,,,,en,,0.94,5.5
+240,241,Good quite warm ,6,6.0,0,0,0,0,0,,,,,,,,en,,0.91,6.0
+241,242,Good a bit too warm ,5,5.5,0,0,0,0,0,,,,,,,,so,,0.65,5.5
+242,243,"Good, very hot, average ",5,5.0,0,0,0,0,0,,,,,,,,no,,0.78,5.0
+243,244,Enjoy ,6,6.5,0,0,0,0,0,,,,,,,,en,,0.82,6.5
+244,245,Enjoy busy and too warm ,4,4.5,0,0,0,0,0,,,,,,,,en,,0.89,4.5
+245,246,Prefect ,9,7.5,0,0,0,0,0,,,,,,,,en,,0.57,7.5
+246,247,"Enjoy, a little ",6,6.0,0,0,0,0,0,,,,,,,,fi,,0.69,6.0
+247,248,"Bonne expérience, joli musée ",7,6.0,0,0,1,0,0,,,6.76,,,,,fr,,0.05,6.0
+248,249,"Enjoy, it’s really hot, ",6,6.5,0,0,0,0,0,,,,,,,,en,,0.96,6.5
+249,250,"Very good, multiple times o visit ",7,6.5,0,0,1,0,0,,,7.15,,,,,en,,0.96,6.5
+250,251,Very good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.95,7.0
+251,252,Bellissimo e molto interattivo,6,6.0,0,0,0,0,0,,,,,,,,it,,0.02,6.0
+252,253,Amazing experience ,8,7.5,0,0,0,0,0,,,,,,,,ro,,0.92,7.5
+253,254,Very good not the first time to visit hot inside,6,7.0,1,0,1,0,0,6.59,,7.56,,,,,en,,0.98,7.0
+254,255,"Bel museo, sezioni interessanti molto belle il t rex",6,5.5,0,0,0,0,0,,,,,,,,it,,0.02,5.5
+255,256,Tres belle visite très complete. Parfois difficile de se retrouver,7,6.0,0,0,0,0,0,,,,,,,,fr,,0.09,6.0
+256,257,Stylée,5,5.0,0,0,0,0,0,,,,,,,,en,,-0.01,5.0
+257,258,"Good, ",7,7.0,0,0,0,0,0,,,,,,,,en,,0.7,7.0
+258,259,"Quite informational, but seemingly targeting younger audiences",5,5.5,0,0,1,0,0,,,5.41,,,,,en,,0.3,5.5
+259,260,"Good, fossil gallery, instructions can be more clear",5,6.0,0,0,1,0,0,,,5.61,,,,,en,,0.54,6.0
+260,261,Merveilleuse expérience et parfaite pour les enfants.,6,6.0,0,0,0,0,0,,,,,,,,fr,,0.01,6.0
+261,262,Very good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.95,7.0
+262,263,"Like it, a bit warm inside ",6,5.5,0,0,0,0,0,,,,,,,,af,,0.34,5.5
+263,264,Good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.55,7.0
+264,265,Like it,6,6.0,0,0,0,0,0,,,,,,,,en,,0.32,6.0
+265,266,"Like it, good, a bit warm, need some ac",6,5.5,1,0,1,0,0,5.81,,7.2,,,,,en,,0.84,5.5
+266,267,"Good, ",7,7.0,0,0,0,0,0,,,,,,,,en,,0.7,7.0
+267,268,"Es un lugar extraordinario,  con gran variedad de información,  historia y entretenimiento educativo. Muy recomendado ya que fu fácil acceso facilita a cualquier persona acercarse y aprender sobre las diversas temáticas expuestas.",5,5.5,0,0,1,0,0,,,5.32,,,,,es,,0.12,5.5
+268,269,"Enjoy, amazing, ",8,7.0,0,0,0,0,0,,,,,,,,tl,,0.95,7.0
+269,270,"Good, ",7,7.0,0,0,0,0,0,,,,,,,,en,,0.7,7.0
+270,271,"Good, quite informative, too warm ",7,6.5,0,0,1,0,0,,,6.93,,,,,en,,0.97,6.5
+271,272,Good ,7,7.0,0,0,0,0,0,,,,,,,,en,,0.71,7.0
+272,273,Bring back Dippy!,5,5.0,0,0,0,0,0,,,,,,,,en,,0.6,5.0
+273,274,"Good, too warm in some room ",6,5.0,1,0,0,0,0,5.9,,,,,,,af,,0.81,5.0
+274,275,"Yes, frequent visitors ",5,5.0,0,0,1,0,0,,,6.34,,,,,fr,,0.25,5.0
+275,276,Good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.55,7.0
+276,277,"Good, ",7,7.0,0,0,0,0,0,,,,,,,,en,,0.7,7.0
+277,278,Very good. The fossils are very interesting.,8,7.5,0,0,1,0,0,,,6.92,,,,,en,,0.98,7.5
+278,279,Good souvenirs,7,6.5,0,0,0,0,0,,,,,,,,en,,0.85,6.5
+279,280,Great artifacts,7,7.0,0,0,1,0,0,,,6.46,,,,,en,,0.8,7.0
+280,281,It was very good,7,7.5,0,0,0,0,0,,,,,,,,en,,0.98,7.5
+281,282,Had a good time,7,6.5,0,0,0,0,0,,,,,,,,so,,0.97,6.5
+282,283,Can recommend the museum to friends and family,8,6.5,0,0,1,1,0,,,6.71,6.93,,,,en,,0.93,6.5
+283,284,Interesting information,7,6.0,0,0,0,0,0,,,,,,,,en,,0.89,6.0
+284,285,Well-maintained exhibits,5,5.5,0,0,1,1,0,,,5.39,6.01,,,,en,,0.38,5.5
+285,286,Good facilities,7,6.0,1,1,1,0,0,6.58,6.7,6.16,,,,,en,,0.78,6.0
+286,287,Friendly staff members,6,6.0,1,0,1,0,0,6.27,,6.52,,,,,da,,0.64,6.0
+287,288,Great for learning,7,7.0,0,0,1,0,0,,,5.71,,,,,en,,0.92,7.0
+288,289,Lovely location,6,6.5,0,0,1,0,0,,,8.87,,,,,en,,0.96,6.5
+289,290,Good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.55,7.0
+290,291,Great for education,7,7.0,0,0,1,0,0,,,5.84,,,,,en,,0.81,7.0
+291,292,Wonderful exhibits,9,7.5,0,0,1,1,0,,,6.49,6.42,,,,en,,0.95,7.5
+292,293,Wonderful,9,8.0,0,0,0,0,0,,,,,,,,en,,0.9,8.0
+293,294,Great history,7,7.0,0,0,0,0,0,,,,,,,,en,,0.82,7.0
+294,295,Interesting subjects,7,6.5,0,0,0,0,0,,,,,,,,en,,0.86,6.5
+295,296,Good exhibits,7,6.5,0,0,1,1,0,,,6.01,6.2,,,,en,,0.6,6.5
+296,297,The museum is very impressive,7,7.0,0,0,1,1,0,,,7.04,7.27,,,,en,,0.98,7.0
+297,298,Nice exhibits,6,6.5,0,0,1,1,0,,,6.42,6.16,,,,en,,0.77,6.5
+298,299,Informative staff,6,6.0,0,0,1,0,0,,,5.31,,,,,en,,0.15,6.0
+299,300,Great learning experience,7,7.0,0,0,1,0,0,,,6.58,,,,,en,,0.95,7.0
+300,301,It could be more child-friendly,4,4.0,0,0,1,0,0,,,4.66,,,,,en,,0.28,4.0
+301,302,Comfortable seating,6,5.5,0,0,0,0,0,,,,,,,,en,,0.64,5.5
+302,303,Great guides,6,7.0,0,0,1,0,0,,,6.32,,,,,en,,0.86,7.0
+303,304,Lovely staff,6,6.5,0,0,1,0,0,,,6.93,,,,,en,,0.97,6.5
+304,305,Good cafeteria,6,6.5,0,0,1,0,0,,,6.42,,,,,en,,0.77,6.5
+305,306,Interesting artifacts,6,6.0,0,0,1,0,0,,,5.55,,,,,en,,0.74,6.0
+306,307,Good visit,7,6.5,0,0,1,0,0,,,9.0,,,,,en,,0.9,6.5
+307,308,Great museum,7,6.5,0,0,1,0,0,,,7.11,,,,,en,,0.94,6.5
+308,309,Interesting place,7,6.0,0,0,1,0,0,,,7.47,,,,,en,,0.89,6.0
+309,310,Nice exhibits,6,6.5,0,0,1,1,0,,,6.42,6.16,,,,en,,0.77,6.5
+310,311,Lovely ambiance,6,6.5,0,0,1,0,0,,,7.95,,,,,en,,0.98,6.5
+311,312,Engaging presentations,6,6.0,0,0,1,0,0,,,5.13,,,,,tl,,0.36,6.0
+312,313,Nice museum,6,6.0,0,0,1,0,0,,,7.26,,,,,en,,0.9,6.0
+313,314,Could be better,4,4.0,0,0,0,0,0,,,,,,,,en,,0.53,4.0
+314,315,Pleasant environment,6,6.0,1,0,1,0,0,6.69,,6.75,,,,,fr,,0.69,6.0
+315,316,Nice layout,6,5.5,0,0,0,0,0,,,,,,,,en,,0.9,5.5
+316,317,Great for education,7,7.0,0,0,1,0,0,,,5.84,,,,,en,,0.81,7.0
+317,318,Friendly service,6,5.5,1,0,1,0,0,5.8,,6.13,,,,,en,,0.81,5.5
+318,319,Great displays,7,6.5,0,0,0,0,0,,,,,,,,en,,0.89,6.5
+319,320,Educational place,6,5.5,0,0,1,0,0,,,5.68,,,,,en,,0.17,5.5
+320,321,Nice guides,6,6.5,0,0,1,0,0,,,5.67,,,,,en,,0.84,6.5
+321,322,Good for families,7,6.5,0,0,1,0,0,,,6.14,,,,,en,,0.83,6.5
+322,323,Good maps,7,6.0,0,0,1,0,0,,,6.25,,,,,en,,0.82,6.0
+323,324,Lovely ambiance,6,6.5,0,0,1,0,0,,,7.95,,,,,en,,0.98,6.5
+324,325,Engaging for kids,6,6.5,0,0,1,0,0,,,4.91,,,,,tl,,0.34,6.5
+325,326,Interesting for kids,6,6.0,0,0,1,0,0,,,5.07,,,,,da,,0.87,6.0
+326,327,Well-organized place,5,6.0,0,0,1,0,0,,,5.98,,,,,en,,0.65,6.0
+327,328,Bit boring,4,3.0,0,0,1,0,0,,,5.03,,,,,en,,-0.86,3.0
+328,329,Interesting artifacts,6,6.0,0,0,1,0,0,,,5.55,,,,,en,,0.74,6.0
+329,330,It was alright,5,5.0,0,0,0,0,0,,,,,,,,en,,0.77,5.0
+330,331,Engaging displays,6,6.0,0,0,1,0,0,,,5.14,,,,,tl,,0.45,6.0
+331,332,Impressive,8,7.0,0,0,0,0,0,,,,,,,,en,,0.8,7.0
+332,333,I enjoyed my stay at the museum. thank you,7,6.5,0,0,1,0,0,,,7.43,,,,,en,,0.99,6.5
+333,334,It was good,7,6.5,0,0,0,0,0,,,,,,,,en,,0.98,6.5
+334,335,Good day in the museum,7,6.5,0,0,1,0,0,,,7.03,,,,,en,,0.95,6.5
+335,336,Excellent,9,8.0,0,0,0,0,0,,,,,,,,en,,0.18,8.0
+336,337,Not terrible,4,4.5,0,0,0,0,0,,,,,,,,en,,0.48,4.5
+337,338,I could stay a whole week here and not get bored,6,5.0,0,0,0,0,0,,,,,,,,en,,0.42,5.0
+338,339,It was comfortable today,6,6.0,0,0,0,0,0,,,,,,,,en,,0.91,6.0
+339,340,Good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.55,7.0
+340,341,Will be back,6,6.0,0,0,0,0,0,,,,,,,,en,,0.49,6.0
+341,342,The food in the restaurant was bad,2,2.5,1,0,0,0,0,4.11,,,,,,,en,,-0.97,2.5
+342,343,Great museum,7,6.5,0,0,1,0,0,,,7.11,,,,,en,,0.94,6.5
+343,344,Liked the exhibits,6,6.0,0,1,1,1,0,,6.89,6.41,6.69,,,,en,,0.95,6.0
+344,345,Children suffered,4,3.5,0,0,0,0,0,,,,,,,,en,,-0.93,3.5
+345,346,Good but too busy,4,5.0,0,1,0,0,0,,4.73,,,,,,en,,-0.3,5.0
+346,347,Needs updating and improvement to stay relevant,4,5.0,0,0,1,0,0,,,5.32,,,,,en,,0.29,5.0
+347,348,OK,5,5.0,0,0,0,0,0,,,,,,,,en,,0.13,5.0
+348,349,Not very good food,3,3.0,0,0,1,0,0,,,4.81,,,,,en,,-0.95,3.0
+349,350,Poor,2,2.5,0,0,0,0,0,,,,,,,,en,,-0.78,2.5
+350,351,Good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.55,7.0
+351,352,Not so good,3,4.0,0,0,0,0,0,,,,,,,,en,,-0.89,4.0
+352,353,Tiring and exhausted. Too much,4,4.0,0,0,0,0,0,,,,,,,,en,,-0.87,4.0
+353,354,So busy,4,4.5,0,1,0,0,0,,3.78,,,,,,en,,-0.4,4.5
+354,355,Nice for a day out in London,6,7.0,0,1,1,0,0,,6.46,9.0,,,,,en,,0.95,7.0
+355,356,Can be improved overall,4,4.0,1,0,1,0,0,5.22,,4.97,,,,,en,,0.63,4.0
+356,357,Recommend it for tourists and people on holiday,6,6.5,0,0,1,0,0,,,6.8,,,,,en,,0.47,6.5
+357,358,Not bad,5,5.5,0,0,0,0,0,,,,,,,,en,,0.81,5.5
+358,359,Lovely stay in the museum,6,6.5,0,0,1,0,0,,,7.76,,,,,en,,0.97,6.5
+359,360,Alright overall,5,5.5,0,0,0,0,0,,,,,,,,en,,0.24,5.5
+360,361,OK,5,5.0,0,0,0,0,0,,,,,,,,en,,0.13,5.0
+361,362,good,6,7.0,0,0,0,0,0,,,,,,,,en,,0.61,7.0
+362,363,Bad smell in some parts of the museum,3,3.5,1,0,0,0,0,3.7,,,,,,,en,,-0.89,3.5
+363,364,Unclear directions,5,4.5,0,0,1,0,0,,,4.34,,,,,en,,-0.36,4.5
+364,365,"It was OK, not bad",5,4.0,0,0,0,0,0,,,,,,,,en,,0.9,4.0
+365,366,"It was pleasant, thank you",7,6.5,0,0,0,0,0,,,,,,,,en,,0.98,6.5
+366,367,Excellent,9,8.0,0,0,0,0,0,,,,,,,,en,,0.18,8.0
+367,368,"Hallways are too small, too many people let in at a time, too hot, not enough open space.",4,4.0,1,0,1,0,0,4.81,,4.0,,,,,en,,-0.8,4.0
+368,369,"Too busy, not enough room to read information and watch exhibits. But it all looks very interesting",4,4.5,0,1,1,1,0,,6.47,5.79,6.25,,,,en,,0.84,4.5
+369,370,It was very busy when I visited so I couldn’t really enjoy the exhibits as much as I wanted to. It is also very warm. ,3,6.0,0,1,1,1,0,,7.33,6.72,6.85,,,,en,,0.02,6.0
+370,371,Not bad for a free Museum ,4,5.5,0,0,1,0,0,,,6.49,,,,,en,,0.74,5.5
+371,372,Way too hot and too many people ,4,3.5,1,1,1,0,0,6.02,5.65,6.09,,,,,en,,0.32,3.5
+372,373,Exhibits were a bit dull but OK,3,4.5,0,1,1,1,0,,6.35,5.54,5.43,,,,en,,-0.68,4.5
+373,374,Limited parking,5,4.5,1,0,0,0,0,3.04,,,,,,,et,,-0.27,4.5
+374,375,boring?,2,3.0,0,0,0,0,0,,,,,,,,en,,-0.78,3.0
+375,376,Sandwiches,5,5.5,0,0,0,0,0,,,,,,,,en,,0.12,5.5
+376,377,Noisy children,5,4.5,0,0,0,0,0,,,,,,,,en,,-0.85,4.5
+377,378,No guide available,5,4.5,0,0,1,0,0,,,3.44,,,,,fr,,-0.31,4.5
+378,379,good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.61,7.0
+379,380,it's ok,5,4.5,0,0,0,0,0,,,,,,,,en,,0.64,4.5
+380,381,is good,7,6.5,0,0,0,0,0,,,,,,,,en,,0.86,6.5
+381,382,had good time,7,6.5,0,0,0,0,0,,,,,,,,en,,0.94,6.5
+382,383,Expensive souvenirs but otherwise all good,5,5.5,0,0,1,0,0,,,6.18,,,,,en,,0.89,5.5
+383,384,Very nice trip,7,7.0,0,0,1,0,0,,,9.0,,,,,en,,0.97,7.0
+384,385,Good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.55,7.0
+385,386,Family had a very good time,7,6.5,0,0,1,0,0,,,7.88,,,,,en,,0.98,6.5
+386,387,It was good.,7,7.0,0,0,0,0,0,,,,,,,,en,,0.97,7.0
+387,388,Not a bad experience actually,7,5.0,0,0,0,0,0,,,,,,,,en,,0.78,5.0
+388,389,Good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.55,7.0
+389,390,Unfriendly people everywhere,5,4.5,0,0,0,0,0,,,,,,,,en,,-0.96,4.5
+390,391,It was a good time. Thank you,7,7.0,0,0,0,0,0,,,,,,,,en,,0.99,7.0
+391,392,It was OK,5,4.5,0,0,0,0,0,,,,,,,,en,,0.74,4.5
+392,393,To hot inside we had to leave after only an hour ,5,4.5,1,0,1,0,0,5.42,,6.04,,,,,en,,-0.02,4.5
+393,394,"Very good but too hot in there,something is broken, too many people ",4,4.0,1,1,1,0,0,5.57,5.55,5.81,,,,,en,,-0.07,4.0
+394,395,Too crowded and hot. Some exhibits I came to see were not open,4,4.0,1,1,1,1,0,5.71,6.77,5.61,6.02,,,,en,,-0.81,4.0
+395,396,"Très beau musée, très grand avec une collection impressionnante. Beaucoup trop de monde et beaucoup trop chaud.",5,5.5,0,0,1,0,0,,,6.95,,,,,fr,,0.13,5.5
+396,397,Very warm and crowded today but overall not bad ,4,5.0,0,1,0,0,0,,5.48,,,,,,en,,0.81,5.0
+397,398,"It was too crowded and hot, so one couldn‘t quite linger to look at the exibition ",4,4.0,1,1,0,0,0,4.9,4.83,,,,,,en,,-0.43,4.0
+398,399,It is very crowded ,5,5.0,0,1,0,0,0,,5.69,,,,,,en,,-0.26,5.0
+399,400,Pretty warm and not much instruction provided ,5,4.5,1,0,1,0,0,5.74,,5.08,,,,,en,,0.74,4.5
+400,401,"More ac, more staff members to support more instruction ",4,5.0,0,0,1,0,0,,,4.58,,,,,en,,0.55,5.0
+401,402,Quite an impressive musuem but there should be fans or ventilation in the building!! ,4,5.0,1,0,1,0,0,5.1,,5.22,,,,,en,,0.65,5.0
+402,403,Good for kid to learn and touch but not too adult friendly there are too many interactive set up ,4,5.5,0,0,1,0,0,,,5.0,,,,,en,,0.15,5.5
+403,404,"The instructions are not clear and it’s summer holiday so many people are in the museum, still fun to visit ",5,5.5,0,0,1,0,0,,,5.89,,,,,en,,0.73,5.5
+404,405,"Mucho calor, hace la experiencia peor. ",5,6.0,0,0,0,0,0,,,,,,,,es,,-0.01,6.0
+405,406,Shortened due to heat and density. I generally am quite fond of museums and the natural history museum is a fave because of the dinosaurs. But it was too hot of a day to enjoy it. And while I am very glad to see children there with families; i just felt I could go again on a less busy day and let the families enjoy. I encourage good edutainment for children,4,5.0,0,1,1,0,0,,8.0,5.93,,,,,en,,0.92,5.0
+406,407,"Nice, could have more interactive exhibits. Air conditioning for the summer would be a plus.",5,5.5,1,0,1,1,0,5.83,,6.1,7.0,,,,en,,0.92,5.5
+407,408,Amazing exhibition to visit on weekend ,8,7.0,0,1,1,1,0,,7.4,7.47,7.23,,,,en,,0.96,7.0
+408,409,"All is presented as small pictures, others than that everything is alright ",4,4.0,1,0,0,0,0,3.72,,,,,,,en,,0.8,4.0
+409,410,"Very good, interactive, things to touch, ",7,6.0,0,0,1,0,0,,,5.46,,,,,en,,0.97,6.0
+410,411,"Too many people to actually get to see the exhibition, overall good",5,5.0,0,1,1,1,0,,6.05,6.08,5.36,,,,en,,0.87,5.0
+411,412,Too crowded,4,3.5,0,1,0,0,0,,5.33,,,,,,en,,-0.79,3.5
+412,413,Poor lighting. Could be brighter,2,3.5,0,0,1,0,0,,,4.29,,,,,en,,-0.4,3.5
+413,414,Hard to get tickets. Overcrowded,4,4.5,0,1,1,0,0,,6.33,6.28,,,,,en,,-0.85,4.5
+414,415,wait times,5,5.0,0,1,0,0,0,,5.97,,,,,,en,,-0.19,5.0
+415,416,hmmm,5,5.5,0,0,0,0,0,,,,,,,,en,,0.0,5.5
+416,417,Lack of seating,5,4.0,1,1,1,0,0,4.78,6.03,3.95,,,,,en,,-0.77,4.0
+417,418,maybe outdated somewhat?,5,4.5,0,0,0,0,0,,,,,,,,en,,-0.33,4.5
+418,419,Noisy environment,4,4.5,1,0,0,0,0,4.85,,,,,,,fr,,-0.53,4.5
+419,420,Hard to navigate,4,4.0,0,0,1,0,0,,,4.36,,,,,sl,,-0.72,4.0
+420,421,Overpriced gift shop and limited options,4,4.5,0,0,1,0,0,,,4.41,,,,,en,,-0.72,4.5
+421,422,Good thank you,7,7.0,0,0,0,0,0,,,,,,,,en,,0.96,7.0
+422,423,Uncomfortable temperature. It was too hot inside.,4,4.0,1,0,0,0,0,4.74,,,,,,,en,,-0.69,4.0
+423,424,OK,5,5.0,0,0,0,0,0,,,,,,,,en,,0.13,5.0
+424,425,It was great. thank you,7,7.0,0,0,0,0,0,,,,,,,,en,,0.99,7.0
+425,426,Confusing layout,4,5.0,0,0,1,0,0,,,5.08,,,,,en,,-0.39,5.0
+426,427,good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.61,7.0
+427,428,It was a good time,7,7.0,0,0,0,0,0,,,,,,,,en,,0.96,7.0
+428,429,Poor signage,4,3.0,1,0,1,0,0,4.28,,4.23,,,,,en,,-0.83,3.0
+429,430,Underwhelming experience,4,3.5,0,0,1,0,0,,,5.2,,,,,en,,-0.92,3.5
+430,431,Poor maintenance,2,3.0,1,0,0,0,0,3.56,,,,,,,pt,,-0.84,3.0
+431,432,Limited accessibility,5,5.0,0,0,1,0,0,,,3.52,,,,,en,,-0.28,5.0
+432,433,not bad,5,5.5,0,0,0,0,0,,,,,,,,en,,0.66,5.5
+433,434,Lack of information,5,4.0,1,0,1,0,0,2.2,,3.44,,,,,en,,-0.74,4.0
+434,435,Too dark,5,4.0,0,0,0,0,0,,,,,,,,en,,-0.64,4.0
+435,436,very good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.94,7.0
+436,437,Liked it,6,6.0,0,0,0,0,0,,,,,,,,en,,0.93,6.0
+437,438,Tiring. Good experience. Worth visiting,7,5.0,0,1,1,0,0,,5.97,6.47,,,,,en,,0.87,5.0
+438,439,not bad overall,4,5.0,0,0,0,0,0,,,,,,,,no,,0.73,5.0
+439,440,Expensive food,5,5.0,0,0,0,0,0,,,,,,,,en,,-0.18,5.0
+440,441,Poor wheelchair access,3,4.0,1,0,1,0,0,4.19,,4.14,,,,,en,,-0.73,4.0
+441,442,OK overall,6,5.0,0,0,0,0,0,,,,,,,,en,,0.35,5.0
+442,443,not bad,6,5.5,0,0,0,0,0,,,,,,,,en,,0.66,5.5
+443,444,We had a very good time,7,7.5,0,0,0,0,0,,,,,,,,en,,0.98,7.5
+444,445,No air conditioning,5,4.0,1,0,0,0,0,3.21,,,,,,,en,,-0.31,4.0
+445,446,Not enough restrooms and hard to find,5,3.5,1,1,1,0,0,5.52,6.32,4.97,,,,,en,,-0.77,3.5
+446,447,No lockers,5,5.0,1,0,0,0,0,4.37,,,,,,,en,,-0.1,5.0
+447,448,Bad reviews,3,2.5,0,0,0,0,0,,,,,,,,en,,-0.69,2.5
+448,449,Difficult for seniors,5,4.5,0,0,1,0,0,,,3.89,,,,,en,,-0.32,4.5
+449,450,"Long entry lines and waiting, overcrowded",5,4.5,1,1,0,0,0,4.44,6.84,,,,,,en,,-0.82,4.5
+450,451,Would visit again,6,5.5,0,0,1,0,0,,,8.66,,,,,en,,0.61,5.5
+451,452,Good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.55,7.0
+452,453,No child-friendly zones,5,4.5,0,0,1,0,0,,,4.54,,,,,en,,-0.26,4.5
+453,454,Small café. Needs more children friendly options,5,5.5,0,0,1,0,0,,,5.71,,,,,en,,0.52,5.5
+454,455,Not enough variety and things to do for children,5,4.5,0,0,1,0,0,,,4.34,,,,,en,,-0.56,4.5
+455,456,Somewhat confusing and hard to navigate,5,4.0,0,0,1,0,0,,,4.61,,,,,en,,-0.89,4.0
+456,457,OK,5,5.0,0,0,0,0,0,,,,,,,,en,,0.13,5.0
+457,458,Lovely. Thank you,8,7.0,0,0,0,0,0,,,,,,,,en,,0.98,7.0
+458,459,Inconsistent information,5,4.0,0,0,0,0,0,,,,,,,,en,,-0.14,4.0
+459,460,Bad exhibit flow,2,3.0,0,0,1,0,0,,,4.1,,,,,en,,-0.71,3.0
+460,461,"Thank you, alright",6,6.0,0,0,0,0,0,,,,,,,,en,,0.75,6.0
+461,462,No guided tours,5,4.5,0,0,1,0,0,,,4.81,,,,,en,,-0.07,4.5
+462,463,We liked it,6,6.0,0,0,0,0,0,,,,,,,,en,,0.85,6.0
+463,464,Bad parking,2,3.0,1,0,0,0,0,3.05,,,,,,,en,,-0.81,3.0
+464,465,Thankyou,5,6.0,0,0,0,0,0,,,,,,,,en,,0.82,6.0
+465,466,Overpriced snacks,5,4.5,0,0,0,0,0,,,,,,,,en,,-0.84,4.5
+466,467,Long exit lines,5,5.5,0,0,0,0,0,,,,,,,,fr,,-0.31,5.5
+467,468,Lack of explanations,5,4.0,1,0,1,0,0,2.39,,3.57,,,,,en,,-0.62,4.0
+468,469,Not bad at all,6,5.0,0,0,0,0,0,,,,,,,,en,,0.84,5.0
+469,470,Loved it. Thank you,8,7.0,0,0,0,0,0,,,,,,,,en,,0.99,7.0
+470,471,Good times. We had a good experience in the end.,8,7.5,0,0,0,0,0,,,,,,,,en,,0.98,7.5
+471,472,Whole group enjoyed the stay in the end,7,6.5,0,0,0,0,0,,,,,,,,en,,0.82,6.5
+472,473,Good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.55,7.0
+473,474,Good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.55,7.0
+474,475,So much fun and so interesting ,7,7.0,0,0,0,0,0,,,,,,,,en,,0.97,7.0
+475,476,Museo molto bello sia per il contenuto interessante che l'edificio. Molto pulito e ben curato. Ho apprezzato molto che non ci fosse un percorso obbligatorio da seguire,5,5.5,0,0,0,0,0,,,,,,,,it,,-0.09,5.5
+476,477,Have so much fun ,6,6.0,0,0,0,0,0,,,,,,,,en,,0.97,6.0
+477,478,Very insightful ,6,6.0,0,0,0,0,0,,,,,,,,en,,0.79,6.0
+478,479,Inspirational experiences and lots of dinosaurs,6,6.5,0,0,1,0,0,,,7.26,,,,,en,,0.78,6.5
+479,480,Good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.55,7.0
+480,481,So informative ,6,5.5,0,0,1,0,0,,,6.23,,,,,en,,0.86,5.5
+481,482,Pretty good and well kept but hot so more ac units is a must or atleast more air drafting in. The exhibits are lovely and entertaining with lots of educational information,7,5.5,1,1,1,1,0,6.11,6.54,6.11,6.35,,,,en,,0.99,5.5
+482,483,We genuinely loved our visit but the heat and the escalators being broken did take away some enjoyment for the visit,5,4.5,1,1,1,0,0,5.3,7.86,6.29,,,,,en,,0.35,4.5
+483,484,Fun place to visit ,7,6.5,0,0,1,0,0,,,7.53,,,,,fr,,0.95,6.5
+484,485,Pretty good,7,5.5,0,0,0,0,0,,,,,,,,en,,0.96,5.5
+485,486,Exhibition is fun ,6,6.0,0,0,1,1,0,,,5.82,6.26,,,,en,,0.93,6.0
+486,487,It’s pretty warm here ,5,5.5,0,0,0,0,0,,,,,,,,en,,0.94,5.5
+487,488,Much better than i expected ,6,5.5,0,0,0,0,0,,,,,,,,en,,0.82,5.5
+488,489,Superb resource given that it is free to the public. ,8,7.0,0,0,1,0,0,,,6.37,,,,,en,,0.91,7.0
+489,490,It was very great. Different varieties of species,7,7.5,0,1,1,0,0,,5.72,7.96,,,,,en,,0.98,7.5
+490,491,Good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.55,7.0
+491,492,Very interesting exhibitions. ,7,7.0,0,0,1,1,0,,,6.43,6.13,,,,en,,0.95,7.0
+492,493,"Interesting but hard to navigate, very hot inside",6,5.5,1,0,1,0,0,6.15,,6.2,,,,,en,,0.72,5.5
+493,494,lots of interesting exhibits but It’s quite hot,7,6.5,0,1,1,1,0,,6.35,6.82,6.82,,,,en,,0.96,6.5
+494,495,Good have lots of interesting things ,7,6.5,0,0,1,0,0,,,7.0,,,,,en,,0.95,6.5
+495,496,Enjoy it,6,5.5,0,0,0,0,0,,,,,,,,en,,0.85,5.5
+496,497,"It was a little confusing at the begining because we had tickets but in any moment they asked about them, for the rest of the museum it's veary interesting",6,6.5,0,0,1,1,0,,,6.16,5.63,,,,en,,0.7,6.5
+497,498,The garden is impressive ,8,7.0,0,0,1,0,0,,,8.06,,,,,en,,0.96,7.0
+498,499,Really warm,5,6.0,0,0,0,0,0,,,,,,,,en,,0.86,6.0
+499,500,Have so much fun ,5,6.0,0,0,0,0,0,,,,,,,,en,,0.97,6.0
+500,501,Very nice surroundings. Lots of people everywhere. I really appreciate the Darwins exhibition and the Dinosaurs. ,8,7.0,0,1,1,1,0,,7.5,7.85,7.34,,,,en,,0.99,7.0
+501,502,动物资源丰富，知识比较多，但人多太热了，更适合青少年学习参观,5,5.5,0,0,0,0,0,,,,,,,,zh-cn,,-0.12,5.5
+502,503,Good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.55,7.0
+503,504,People are too packed too messy ,5,3.5,1,1,0,0,0,4.48,4.95,,,,,,en,,-0.9,3.5
+504,505,Too many people and not able to get a close look on the exhibition ,4,4.5,0,1,1,1,0,,6.3,5.45,5.66,,,,en,,-0.66,4.5
+505,506,The materials are amazing and it's a great opportunity to learn. ,8,7.5,0,0,1,0,0,,,5.53,,,,,en,,0.99,7.5
+506,507,Too warm too many people ,4,4.0,1,0,0,0,0,5.01,,,,,,,en,,0.23,4.0
+507,508,very good but a bit warm ,6,6.0,0,0,0,0,0,,,,,,,,en,,0.96,6.0
+508,509,"Beautiful building with all the exhibitions, better to come in winter ",6,6.0,0,1,1,1,0,,7.73,6.81,6.9,,,,en,,0.97,6.0
+509,510,"Too hot, exhibition is good ",5,5.0,0,0,1,0,0,,,6.05,,,,,en,,0.96,5.0
+510,511,"it was very nice and interesting, there were just too much people which stressed me out",5,5.0,0,1,1,0,0,,7.27,6.58,,,,,en,,0.33,5.0
+511,512,Exhibition is fun but some of fan will be great,7,6.0,0,1,1,0,0,,7.37,6.12,,,,,en,,0.95,6.0
+512,513,Love the moon and dinosaurs ,8,6.5,0,0,0,0,0,,,,,,,,en,,0.93,6.5
+513,514,A bit warm enjoy the exhibition ,6,5.5,0,1,1,0,0,,5.22,7.59,,,,,en,,0.95,5.5
+514,515,it was really nice and fun. I love the interactive parts and it's always a pleasure to come back (it wasn't my firat time!),8,7.0,0,1,1,0,0,,7.53,7.24,,,,,en,,0.99,7.0
+515,516,Okay,5,5.5,0,0,0,0,0,,,,,,,,en,,0.11,5.5
+516,517,Very hot and crowded ,4,5.0,1,1,1,0,0,6.62,6.31,7.34,,,,,en,,0.53,5.0
+517,518,"No mummy, nice ac,",5,5.0,1,0,0,0,0,4.44,,,,,,,en,,0.63,5.0
+518,519,Good exhibition in a beautiful building ,8,6.5,0,1,1,1,0,,7.54,6.66,6.94,,,,en,,0.96,6.5
+519,520,Weather is a bit warm to affect the experience but overall fun to visit ,7,6.0,0,1,1,0,0,,6.72,7.15,,,,,en,,0.88,6.0
+520,521,Too hot good,7,5.5,0,0,0,0,0,,,,,,,,en,,0.96,5.5
+521,522,The dinosaurs are fun to visit ,6,6.5,0,0,1,0,0,,,6.99,,,,,en,,0.94,6.5
+522,523,Instruction is bad too warm ,2,3.5,1,0,1,0,0,3.2,,3.18,,,,,en,,-0.92,3.5
+523,524,"More instructions can be provided, hard to look for any washroom ",4,4.0,1,0,0,0,0,4.81,,,,,,,en,,-0.12,4.0
+524,525,Dinosaur is fun to watch ,6,6.0,0,0,0,0,0,,,,,,,,en,,0.94,6.0
+525,526,"Very good, up the ac, pretty clear ",6,6.0,0,0,1,0,0,,,7.18,,,,,en,,0.97,6.0
+526,527,"Overall it was Great, but the Navigation is a bit confusing and it was very crowded when we went there. ",6,6.5,0,1,1,0,0,,7.34,6.85,,,,,en,,0.15,6.5
+527,528,"It was fun, interesting, but really hot insider ",7,6.5,0,0,1,0,0,,,7.72,,,,,en,,0.98,6.5
+528,529,Nice visit with amazing exhibition ,8,7.0,0,1,1,1,0,,6.94,7.88,6.88,,,,en,,0.96,7.0
+529,530,Lots of different exhibitions with interactive elements. Sad to see some of them not working. Impressive building.,5,5.0,1,1,1,1,0,4.77,7.49,5.27,6.05,,,,en,,-0.05,5.0
+530,531,"The experience at the museum and quality of the specimen displayed was amazing. Anyhow, most of the exibitions were way too crowded to properly visit and enjoy the experience.",6,5.0,0,1,1,1,0,,6.87,5.95,6.0,,,,en,,0.77,5.0
+531,532,Good kid friendly experience ,7,6.0,0,0,1,0,0,,,5.54,,,,,en,,0.93,6.0
+532,533,Very crowded with not much ac in the vault ,4,4.0,1,1,0,0,0,4.73,5.99,,,,,,en,,-0.39,4.0
+533,534,Good ,7,7.0,0,0,0,0,0,,,,,,,,en,,0.71,7.0
+534,535,Tante robe interessante però molto caldo e tanta gente di domenica ,4,5.0,0,0,0,0,0,,,,,,,,it,,-0.03,5.0
+535,536,Very nice! And interesting ,8,7.5,0,0,0,0,0,,,,,,,,en,,0.97,7.5
+536,537,Very busy and not much a path to walk around ,4,3.5,0,1,1,0,0,,5.71,5.43,,,,,en,,-0.52,3.5
+537,538,Good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.55,7.0
+538,539,"Good, too hot,",5,5.5,0,0,0,0,0,,,,,,,,en,,0.83,5.5
+539,540,Muy interesante ,7,6.5,0,0,0,0,0,,,,,,,,es,,0.02,6.5
+540,541,Like it,6,6.0,0,0,0,0,0,,,,,,,,en,,0.32,6.0
+541,542,"I really enjoyed having a path to follow on red zone and how te story unfolded. In comparison to the british museum, it was a lot better. But still, because of the huge crowd, sometimes it would get overwhelming and hot, so it would cause some discomfort and need to move on instead of enjoying",4,6.0,0,0,1,1,0,,,6.54,6.82,,,,en,,0.5,6.0
+542,543,A lot of information and interactive items which was good. Very good day out for family. Would definitely visit again when it’s less busy,8,7.0,0,1,1,1,0,,7.14,6.89,6.47,,,,en,,0.99,7.0
+543,544,I liked the red zone,6,5.0,0,0,0,0,0,,,,,,,,en,,0.79,5.0
+544,545,"Good, instructions are poor",4,3.5,1,0,1,0,0,4.23,,4.07,,,,,en,,-0.7,3.5
+545,546,Nice museum but a bit too crowded ,5,5.0,0,1,1,1,0,,6.2,6.39,5.95,,,,en,,-0.36,5.0
+546,547,More exhibition of Insects would be great ,5,6.0,0,0,1,0,0,,,5.78,,,,,en,,0.91,6.0
+547,548,Overall good but some exhibition don’t have a name attached ,6,6.0,0,0,1,0,0,,,5.92,,,,,en,,0.11,6.0
+548,549,"Too crowded, too warm in blue zone, cafe",5,4.0,1,1,0,0,0,5.15,6.96,,,,,,en,,-0.4,4.0
+549,550,"Interesting exhibits, but extremely busy and very very warm. Interactive exhibits are good, but they were placed in tight spaces causing large bottlenecks of people who couldn't continue passed. The cafe did refill our water bottle for free, but it was warm and there was a long queue for the cafe. Water fountains or refilling stations would be ideal. Booking a timeslot for free to skip the entry queue was great though.",4,5.5,1,1,1,1,0,6.45,7.3,6.78,6.52,,,,en,,0.92,5.5
+550,551,"A lot of things in it, and the metals are impressive ",6,6.5,0,0,1,0,0,,,6.31,,,,,en,,0.95,6.5
+551,552,interesting,7,7.0,0,0,0,0,0,,,,,,,,en,,0.02,7.0
+552,553,beautiful building!,5,6.5,0,0,1,0,0,,,8.66,,,,,id,,0.98,6.5
+553,554,Fun,6,6.0,0,0,0,0,0,,,,,,,,en,,0.75,6.0
+554,555,Loved it.,7,7.0,0,0,0,0,0,,,,,,,,en,,0.96,7.0
+555,556,Must see,5,6.5,0,0,0,0,0,,,,,,,,en,,0.74,6.5
+556,557,Lovely atmosphere,6,6.5,0,1,0,0,0,,6.08,,,,,,en,,0.98,6.5
+557,558,Could be more interesting,4,4.5,0,0,1,0,0,,,5.87,,,,,en,,0.85,4.5
+558,559,It was very interesting,7,7.5,0,0,0,0,0,,,,,,,,en,,0.97,7.5
+559,560,Well-curated,5,6.0,0,0,1,0,0,,,5.98,,,,,en,,0.43,6.0
+560,561,Liked it. It is a fantastic museum.,9,6.0,0,0,1,0,0,,,6.99,,,,,en,,0.99,6.0
+561,562,Interesting items,7,6.0,0,0,1,0,0,,,5.42,,,,,en,,0.93,6.0
+562,563,Nice environment,5,6.5,0,0,1,0,0,,,7.58,,,,,fr,,0.9,6.5
+563,564,Good food options,7,6.0,0,0,0,0,0,,,,,,,,en,,0.89,6.0
+564,565,Interactive areas,5,6.0,0,0,1,0,0,,,5.29,,,,,en,,0.11,6.0
+565,566,Well-organized exhibits,5,5.5,0,0,1,1,0,,,5.11,5.85,,,,en,,0.61,5.5
+566,567,Nice,6,6.5,0,0,0,0,0,,,,,,,,en,,0.51,6.5
+567,568,Great collection,7,7.0,0,0,0,0,0,,,,,,,,en,,0.94,7.0
+568,569,Interesting topics,7,6.5,0,0,0,0,0,,,,,,,,en,,0.87,6.5
+569,570,Very good for a visit,8,7.0,0,1,1,0,0,,6.13,7.97,,,,,en,,0.98,7.0
+570,571,Couldn't find toilets,5,4.0,1,0,0,0,0,4.55,,,,,,,en,,-0.81,4.0
+571,572,Thank you. It was great,7,7.0,0,0,0,0,0,,,,,,,,en,,0.99,7.0
+572,573,Felt it was worth visiting again,6,6.5,0,0,1,0,0,,,7.89,,,,,en,,0.9,6.5
+573,574,It was not too bad,5,4.0,0,1,0,0,0,,3.34,,,,,,en,,0.83,4.0
+574,575,OK,5,5.0,0,0,0,0,0,,,,,,,,en,,0.13,5.0
+575,576,OK,5,5.0,0,0,0,0,0,,,,,,,,en,,0.13,5.0
+576,577,It’s amazing how the skeletons are perserved,8,6.5,0,0,0,0,0,,,,,,,,en,,0.48,6.5
+577,578,very interesting and well structured ,7,7.0,0,0,1,0,0,,,6.4,,,,,en,,0.94,7.0
+578,579,Worth spending a day! Rich collection! Dino fans favorite!,8,7.5,0,0,1,0,0,,,7.79,,,,,en,,0.97,7.5
+579,580,Amazing building with cool exihibitions,8,7.0,0,0,1,0,0,,,6.69,,,,,en,,0.97,7.0
+580,581,Educational,6,5.5,0,0,1,0,0,,,5.28,,,,,en,,0.11,5.5
+581,582,It is a really nice experience in my study life，I have learned plenty of knowledge during the visiting.,7,7.0,0,0,1,0,0,,,7.63,,,,,en,,0.99,7.0
+582,583,"It was wonderful that was free. That was lots of fantastic Exhibitions, I just wish some of the free areas were better maintained. Some of the cabinets didn’t have working light sources, and some of the displays were very robbed to read.",5,6.0,0,1,1,1,0,,7.9,6.35,6.36,,,,en,,0.78,6.0
+583,584,"A good time, a bit packes",7,6.5,0,1,1,0,0,,4.4,7.97,,,,,en,,0.82,6.5
+584,585,"Great content , when we thought we were done there was more. Mineral collection brilliant. Small mistakes on dsiplays such as referring to scorpion as poisonous when its venomous , poison being something you ingest where venomous is where it is injected normally theough an animal. ",4,6.0,0,0,1,0,0,,,5.92,,,,,en,,0.22,6.0
+585,586,Very nice!,8,6.5,0,0,0,0,0,,,,,,,,en,,0.97,6.5
+586,587,Good to learn the ascent,7,7.0,0,0,1,0,0,,,6.7,,,,,en,,0.77,7.0
+587,588,Great ,8,7.5,0,0,0,0,0,,,,,,,,en,,0.74,7.5
+588,589,Pleasant and positive experience. The front area with seating facility is aesthetically laid out ,7,6.5,0,1,1,0,0,,6.48,6.59,,,,,en,,0.95,6.5
+589,590,El muséo se conserva muy bien y tiene una gran variedad para todos los gustos,5,6.0,1,0,1,0,0,6.13,,6.22,,,,,es,,0.12,6.0
+590,591,Very interesting exhibits,7,7.0,0,0,1,1,0,,,6.21,6.22,,,,en,,0.95,7.0
+591,592,Brilliant ,8,7.5,0,0,0,0,0,,,,,,,,en,,0.76,7.5
+592,593,Good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.55,7.0
+593,594,Very fun experience with friends ,7,7.0,0,0,1,0,0,,,7.6,,,,,en,,0.97,7.0
+594,595,Very interesting,7,7.0,0,0,0,0,0,,,,,,,,en,,0.91,7.0
+595,596,Good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.55,7.0
+596,597,Interesting ,7,7.0,0,0,0,0,0,,,,,,,,en,,0.75,7.0
+597,598,Knowing about our past enables us to protect our future. The NHM engages us in that knowledge and helps us to see our responsibilities to the natural world. ,5,5.5,0,0,1,0,0,,,5.91,,,,,en,,0.62,5.5
+598,599,Amazing temporary exhibit on birds. Disturbing justaposition between effective past actions via effective legislation and current museum recommendations that focus on comparatively ineffective individual actions ,8,6.5,0,0,1,0,0,,,5.75,,,,,en,,0.66,6.5
+599,600,We love coming here. Shame the escalator through the planet wasn’t working. The Dinosaur exhibit was brilliant as always ,7,6.0,0,1,1,0,0,,7.45,6.98,,,,,en,,0.92,6.0
+600,601,Great exhibits but really busy ,6,5.5,0,1,1,1,0,,6.48,6.19,6.1,,,,en,,0.7,5.5
+601,602,It was a great experience!,8,8.0,0,1,0,0,0,,6.18,,,,,,en,,0.99,8.0
+602,603,"Han sido muy interesantes todas las partes del museo, aun que personalmente la parte de los minerales ha sido super interesante ",7,6.5,0,0,1,0,0,,,6.12,,,,,es,,0.1,6.5
+603,604,Very interesting ,7,7.0,0,0,0,0,0,,,,,,,,en,,0.91,7.0
+604,605,The goods in the museums are very beautiful and there are many series and Kinds of different things that I'm not very familiar with so I can learn something new.,7,6.5,0,0,1,1,0,,,6.46,7.07,,,,en,,0.98,6.5
+605,606,Love the exhibition too warm in some room,6,5.5,1,0,1,0,0,5.87,,6.16,,,,,en,,0.98,5.5
+606,607,"Crowded, beautiful building, enjoyable exhibitions ",5,6.0,0,1,1,1,0,,7.43,6.76,6.58,,,,en,,0.95,6.0
+607,608,"lovely, did not expect it to be so vast",7,6.5,0,1,1,0,0,,5.64,8.35,,,,,en,,0.76,6.5
+608,609,"Interesting, warm inside",7,6.0,0,0,0,0,0,,,,,,,,af,,0.9,6.0
+609,610,Hyper bien,6,6.0,0,0,0,0,0,,,,,,,,en,,0.01,6.0
+610,611,Too warm ,5,4.0,1,0,0,0,0,4.73,,,,,,,en,,0.26,4.0
+611,612,"Good, too warm, enjoy ",6,5.5,0,0,0,0,0,,,,,,,,so,,0.97,5.5
+612,613,"Enjoy, amazing, too warm, lots of people ",7,6.5,0,1,1,0,0,,6.77,8.87,,,,,en,,0.98,6.5
+613,614,Hot but fun,6,5.5,0,0,0,0,0,,,,,,,,en,,0.75,5.5
+614,615,"Quite good, Interactuve part ",7,7.0,0,0,1,0,0,,,6.64,,,,,fr,,0.92,7.0
+615,616,The whole atmosphere was great. It was a shame it was so hot but we did pick one of thr hottest days of the year to visit. We hada 5 year old with is who was engaged and saying wow most of the time. Ill return on my own to read the exhibits thoroughly. An amazing free resource.,8,6.0,0,1,1,1,0,,7.23,6.57,6.79,,,,en,,0.98,6.0
+616,617,Great expierence overall. However crowdy at this time of the year and quite warm,7,6.0,0,1,1,0,0,,6.77,6.93,,,,,en,,0.97,6.0
+617,618,It was amazing,9,8.0,0,0,0,0,0,,,,,,,,en,,0.97,8.0
+618,619,Like the bird ,6,6.0,0,0,0,0,0,,,,,,,,en,,0.13,6.0
+619,620,Zona dinosauri top,7,6.5,0,0,0,0,0,,,,,,,,hr,,0.03,6.5
+620,621,"Good, interactive ",7,6.5,0,0,1,0,0,,,5.84,,,,,en,,0.87,6.5
+621,622,"Really interesting and great, slightly hot though! More scientific detail on the displays maybe (or an extra booklet)",7,6.5,0,0,1,0,0,,,5.6,,,,,en,,0.98,6.5
+622,623,"More bins, a bit warm ",5,5.0,1,0,0,0,0,4.87,,,,,,,en,,0.35,5.0
+623,624,"Good, lots of things to see, a littlr",7,7.0,0,1,1,1,0,,5.98,7.22,6.24,,,,en,,0.95,7.0
+624,625,"Very good, enjoy it ",7,7.0,0,0,0,0,0,,,,,,,,af,,0.98,7.0
+625,626,From the entrance it was already very grand and there were so many interesting zones and exhibits ,7,7.0,0,0,1,1,0,,,7.07,7.69,,,,en,,0.97,7.0
+626,627,"Less people inside, some area is a bit warm, not much room to walk ",5,5.0,1,1,1,0,0,5.61,6.77,6.25,,,,,en,,0.12,5.0
+627,628,Interesting and engaging exhibits ,7,6.5,0,0,1,1,0,,,5.77,6.43,,,,en,,0.91,6.5
+628,629,Fantastic experience overall! ,9,7.5,0,1,1,0,0,,6.02,7.48,,,,,en,,0.96,7.5
+629,630,Good for children ,7,6.5,0,0,1,0,0,,,5.21,,,,,en,,0.85,6.5
+630,631,Lots to see and very well organised. ,7,7.0,0,1,1,1,0,,6.65,7.13,6.63,,,,en,,0.89,7.0
+631,632,"First time is free is a huge plus, many interesting things",7,6.5,0,0,1,0,0,,,7.55,,,,,en,,0.98,6.5
+632,633,Good for the kids ,7,6.5,0,0,1,0,0,,,5.87,,,,,en,,0.86,6.5
+633,634,Wonderfull!,9,8.0,0,0,0,0,0,,,,,,,,en,,0.95,8.0
+634,635,It was nice,6,6.5,0,0,0,0,0,,,,,,,,en,,0.97,6.5
+635,636,Very big,5,6.0,0,0,0,0,0,,,,,,,,en,,0.64,6.0
+636,637,For free!,5,5.5,0,0,0,0,0,,,,,,,,en,,0.66,5.5
+637,638,The information was helpful. thank you,6,6.0,0,0,1,0,0,,,5.48,,,,,en,,0.97,6.0
+638,639,good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.61,7.0
+639,640,easy to get to from underground,5,5.5,0,0,1,0,0,,,7.08,,,,,en,,0.43,5.5
+640,641,Family-friendly,5,5.5,0,0,1,0,0,,,5.46,,,,,en,,0.73,5.5
+641,642,educational,6,5.5,0,0,1,0,0,,,5.28,,,,,en,,0.11,5.5
+642,643,good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.61,7.0
+643,644,Good value,7,6.5,0,0,0,0,0,,,,,,,,en,,0.66,6.5
+644,645,Solid,5,6.0,0,0,0,0,0,,,,,,,,en,,0.3,6.0
+645,646,Impressive collection,7,7.0,0,0,0,0,0,,,,,,,,fr,,0.93,7.0
+646,647,I enjoyed it. thank you,7,6.5,0,0,0,0,0,,,,,,,,en,,0.98,6.5
+647,648,Well organised given people visiting. good,7,6.0,0,1,1,0,0,,6.33,6.7,,,,,en,,0.91,6.0
+648,649,Good accessibility,7,6.0,0,0,1,0,0,,,5.05,,,,,en,,0.72,6.0
+649,650,Very good for family,7,6.5,0,0,1,0,0,,,6.93,,,,,en,,0.97,6.5
+650,651,Alright museum,5,6.0,0,0,1,0,0,,,6.37,,,,,en,,0.03,6.0
+651,652,Good maps,7,6.0,0,0,1,0,0,,,6.25,,,,,en,,0.82,6.0
+652,653,Gift shop was overprized,4,4.0,0,0,0,0,0,,,,,,,,en,,-0.67,4.0
+653,654,Kid-friendly,5,5.0,0,0,1,0,0,,,4.79,,,,,en,,0.56,5.0
+654,655,People were helpful,5,6.0,0,0,1,0,0,,,5.88,,,,,en,,0.92,6.0
+655,656,overall ok,5,5.0,0,0,0,0,0,,,,,,,,en,,0.58,5.0
+656,657,Wonderful!,9,8.5,0,0,0,0,0,,,,,,,,en,,0.94,8.5
+657,658,Nice,5,6.5,0,0,0,0,0,,,,,,,,en,,0.51,6.5
+658,659,Friendly people,5,6.0,0,0,0,0,0,,,,,,,,en,,0.71,6.0
+659,660,OK,5,5.0,0,0,0,0,0,,,,,,,,en,,0.13,5.0
+660,661,Impressive museum and exhibitions!,7,7.0,0,0,1,1,0,,,7.11,6.74,,,,fr,,0.96,7.0
+661,662,It was good,7,6.5,0,0,0,0,0,,,,,,,,en,,0.98,6.5
+662,663,Nice café,6,6.0,0,0,1,0,0,,,8.78,,,,,en,,0.85,6.0
+663,664,Enjoyable experience,7,6.5,0,0,0,0,0,,,,,,,,es,,0.94,6.5
+664,665,Not so good,4,4.0,0,0,0,0,0,,,,,,,,en,,-0.89,4.0
+665,666,Had difficulty finding way around,4,5.0,1,0,0,0,0,1.7,,,,,,,en,,-0.64,5.0
+666,667,Good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.55,7.0
+667,668,Great activities,7,7.5,0,0,1,0,0,,,6.68,,,,,en,,0.94,7.5
+668,669,Highly informative,6,6.0,0,0,1,0,0,,,6.16,,,,,en,,0.85,6.0
+669,670,Very comfortable environment and pleasant overall,6,6.5,0,0,1,0,0,,,6.64,,,,,en,,0.98,6.5
+670,671,More rest areas are needed,5,5.0,1,1,1,0,0,5.42,8.02,5.61,,,,,en,,-0.05,5.0
+671,672,Good customer service,7,6.0,1,0,1,0,0,5.3,,5.82,,,,,en,,0.79,6.0
+672,673,Good for learning,7,7.0,0,0,1,0,0,,,5.41,,,,,en,,0.87,7.0
+673,674,Interesting history,7,6.0,0,0,0,0,0,,,,,,,,en,,0.81,6.0
+674,675,Pleasant visit,5,6.5,0,0,1,0,0,,,8.59,,,,,en,,0.7,6.5
+675,676,Good cafeteria,7,6.5,0,0,1,0,0,,,6.42,,,,,en,,0.77,6.5
+676,677,Ambiance is lacking,4,3.5,1,0,1,0,0,4.54,,4.13,,,,,en,,-0.73,3.5
+677,678,Nice displays,5,6.0,0,0,0,0,0,,,,,,,,en,,0.87,6.0
+678,679,Clear descriptions,5,5.0,0,0,1,0,0,,,5.53,,,,,fr,,0.06,5.0
+679,680,Great museum,7,6.5,0,0,1,0,0,,,7.11,,,,,en,,0.94,6.5
+680,681,Felt tired during visit,5,5.0,1,0,0,0,0,5.0,,,,,,,en,,-0.66,5.0
+681,682,Wonderful staff,9,7.0,0,0,1,0,0,,,6.79,,,,,en,,0.95,7.0
+682,683,Excellent trip for the whole group,9,7.5,0,0,1,0,0,,,8.04,,,,,en,,0.96,7.5
+683,684,Enjoyable for everyone,5,6.0,0,0,0,0,0,,,,,,,,no,,0.94,6.0
+684,685,Great atmosphere,7,6.5,0,1,0,0,0,,6.07,,,,,,en,,0.94,6.5
+685,686,Good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.55,7.0
+686,687,Could be cleaner. Felt dirty at times.,4,4.0,1,0,0,0,0,5.12,,,,,,,en,,-0.69,4.0
+687,688,Educational for kids,6,6.0,0,0,1,0,0,,,4.97,,,,,en,,0.58,6.0
+688,689,Plenty to see and look around,6,5.0,0,0,1,0,0,,,6.72,,,,,en,,0.66,5.0
+689,690,OK,5,5.0,0,0,0,0,0,,,,,,,,en,,0.13,5.0
+690,691,I will definitely visit again and recommend,7,7.0,0,0,1,0,0,,,7.87,,,,,en,,0.96,7.0
+691,692,Lovely displays,6,6.5,0,0,1,0,0,,,6.46,,,,,en,,0.96,6.5
+692,693,Good for groups,7,6.5,0,0,1,0,0,,,5.65,,,,,en,,0.86,6.5
+693,694,Godo visit,6,6.0,0,0,1,0,0,,,9.0,,,,,en,,0.14,6.0
+694,695,Hard to get to,4,4.5,0,1,1,0,0,,4.98,6.26,,,,,en,,-0.45,4.5
+695,696,Comfortable visit,5,6.0,0,0,1,0,0,,,7.99,,,,,no,,0.83,6.0
+696,697,Great building,7,7.0,0,0,1,0,0,,,7.74,,,,,en,,0.93,7.0
+697,698,Nice location,5,6.0,0,0,1,0,0,,,9.0,,,,,en,,0.87,6.0
+698,699,OK,5,5.0,0,0,0,0,0,,,,,,,,en,,0.13,5.0
+699,700,Always go with my grandchildren. They like it,5,6.0,0,0,1,0,0,,,6.7,,,,,en,,0.87,6.0
+700,701,It was enjoyable,5,6.5,0,0,0,0,0,,,,,,,,en,,0.95,6.5
+701,702,Good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.55,7.0
+702,703,Not so bad,5,3.5,0,0,0,0,0,,,,,,,,en,,0.62,3.5
+703,704,Enjoyed my visit very much,7,7.0,0,1,1,0,0,,6.84,8.07,,,,,en,,0.99,7.0
+704,705,Needs new things,4,4.5,1,0,0,0,0,3.59,,,,,,,en,,0.28,4.5
+705,706,Felt too exhausted and tired,5,4.0,1,0,0,0,0,3.59,,,,,,,en,,-0.92,4.0
+706,707,Can be good choice for people,7,6.0,0,0,0,0,0,,,,,,,,en,,0.75,6.0
+707,708,Good,7,7.0,0,0,0,0,0,,,,,,,,en,,0.55,7.0
+708,709,Solid,5,6.0,0,0,0,0,0,,,,,,,,en,,0.3,6.0
+709,710,Very pleasant visit and will visit again,5,7.0,0,1,1,0,0,,6.97,8.62,,,,,en,,0.98,7.0
+710,711,Would recommend to others,6,6.0,0,0,1,0,0,,,6.25,,,,,en,,0.63,6.0
+711,712,Maybe improvemend needed. It was solid.,5,4.5,0,0,1,0,0,,,5.25,,,,,en,,0.54,4.5
+712,713,Loved it,5,6.5,0,0,0,0,0,,,,,,,,en,,0.96,6.5
+713,714,Very good overall,7,6.5,0,0,0,0,0,,,,,,,,en,,0.96,6.5
+714,715,It was great again,7,6.0,0,0,0,0,0,,,,,,,,en,,0.97,6.0
+715,716,"Yes, it was good",7,7.0,0,0,0,0,0,,,,,,,,en,,0.98,7.0
+716,717,Some things are old,4,5.0,0,0,0,0,0,,,,,,,,en,,-0.66,5.0
