@@ -50,7 +50,6 @@ Participants were asked to write reviews of their experiences across the differe
 **Explored Alternative Methods**:
 - Clustering: cluster all the reviews and use an LLM to label each cluster (one or several attribute present for each cluster)
 - Classification: Train a classifier on the embeddings of the reviews
-- Method 3: [Description pending]
 
 ### Attribute Sentiment
 
@@ -59,20 +58,22 @@ Participants were asked to write reviews of their experiences across the differe
 - Score from 1 to 9 was calculated using the cosine similarity with both negative and positive anchors
 
 **Explored Alternative Methods**:
-- Simple LLM inferences: Prompt an LLM to provide a score for each attribute
+- Simple LLM inferences: Prompt an LLM to provide a score for each attribute, however small LLMs (under 10B parameters) appear to have too limited reasoning capabilities
 - We don't have groundtruth scores, but if so we could have trained a BERT or a more advanced LLM
 
 ### Overall sentiment
 
-**Final method**: Use a BERT-based sentiment analysis model 
+**Final method**: Uses cardiffnlp/twitter-roberta-base-sentiment (RoBERTa trained on Twitter data), this model's training set closely mirrors the informal nature of our customer review corpus. Specifically, it is uniquely sensitive to paralinguistic cues, such as capitalization for emphasis, repetitive punctuation, and the shorthand or typographic errors that frequently appear in user-generated content.
 
 ### Satisfaction final
 
 We have groundtruth scores that have been created by hand. So we can train a regressor.
 
-**Final Method**: Linear regression with the embeddings with Ridge regularization
+**Final Method**: Linear regression with the embeddings with Ridge regularization, best performance out-of-sample because it preserves a contribution from all 768 dimensions by distributing weights proportionally rather than eliminating them. This ensures the model retains the full spectrum of idiomatic subtleties, cultural linguistic markers, and tonal variations embedded across the vector space.
 
 **Explored Alternative Methods**:
-More advanced methods were tried but were very prone to overfitting
+- unregularized linear regression: not accurate
+- linear regression with L1 regularization: too reductive
+- ensemble models: very prone to overfitting 
 
 ---

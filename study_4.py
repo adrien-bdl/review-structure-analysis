@@ -28,8 +28,14 @@ df_4 = clean_data(df_4, "text")
 
 ## 1. Attribute presence
 
-model_path = "./final_pipeline/models/embedding_models/models--sentence-transformers--all-mpnet-base-v2/snapshots/e8c3b32edf5434bc2275fc9bab85f82640a19130" 
-embedding_model = SentenceTransformer(model_path).to(device)
+model_name = 'all-mpnet-base-v2'
+base_path = "./final_pipeline/models/embedding_models"
+
+embedding_model = SentenceTransformer(
+    model_name, 
+    cache_folder=base_path,
+    device=device
+)
 
 attribute_names = [
     'Quality_and_taste_of_food',
@@ -108,21 +114,22 @@ df_4 = anchor_similarity(
 
 ## 3. Overall sentiment
 
-script_dir = os.path.dirname(os.path.abspath(__file__))
-model_path = os.path.join(script_dir, "final_pipeline/models/overall_sentiment/models--cardiffnlp--twitter-roberta-base-sentiment/snapshots")
+model_id = "cardiffnlp/twitter-roberta-base-sentiment"
+local_dir = os.path.join(os.getcwd(), "final_pipeline/models/overall_sentiment")
 
-snapshots = os.listdir(model_path)
-if snapshots:
-    snapshot_dir = os.path.join(model_path, snapshots[0])
-else:
-    raise FileNotFoundError(f"No snapshots found in {model_path}")
+snapshot_download(
+    repo_id=model_id,
+    local_dir=local_dir,
+    local_dir_use_symlinks=False, 
+    token=None
+)
 
 classifier = pipeline(
     "sentiment-analysis",
-    model=snapshot_dir,
+    model=local_dir,
     top_k=None,
     batch_size=32,
-    device=device
+    device=device,
 )
 
 final_label = {'LABEL_0': 'Negative', 'LABEL_1': 'Neutral', 'LABEL_2': 'Positive'}
