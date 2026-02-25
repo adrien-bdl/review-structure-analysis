@@ -162,8 +162,11 @@ df_1["Overall_review_sentiment"] = c_scores
 
 ## 4. Satisfaction final
 
-with open('final_pipeline/models/satisfaction_final/ridge_model_study_1.pkl', 'rb') as f:
-    clf_1 = pickle.load(f)
+# with open('final_pipeline/models/satisfaction_final/ridge_model_study_1.pkl', 'rb') as f:
+#     clf_1 = pickle.load(f)
+
+with open('final_pipeline/models/satisfaction_final/ridge_model_weighted_study_1.pkl', 'rb') as f:
+    clf_1_weighted = pickle.load(f)
 
 X = embedding_model.encode(
     df_1["finalReview"].fillna("").tolist(), 
@@ -171,7 +174,8 @@ X = embedding_model.encode(
     convert_to_tensor=False
 )
 
-y_pred = clf_1.predict(X)
+# y_pred = clf_1.predict(X)
+y_pred = clf_1_weighted.predict(X)
 y_pred_rounded = np.round(y_pred * 2) / 2
 df_1["pred_Satisfaction_final"] = y_pred_rounded
 
@@ -184,7 +188,6 @@ columns = columns[:idx_satif+1] +  ["pred_Satisfaction_final"] + columns[idx_sat
 df_1["pred_Satisfaction_final"] = y_pred_rounded
 
 df_1 = df_1.loc[:,columns]
-
 
 df_1.to_excel("./data/final_predictions/xlsx/pred_Study_1_reviews.xlsx")
 df_1.to_csv("./data/final_predictions/csv/pred_Study_1_reviews.csv")
