@@ -6,13 +6,12 @@ import numpy as np
 from sentence_transformers import SentenceTransformer, util
 from dotenv import load_dotenv
 import os
-from huggingface_hub import snapshot_download
-from transformers import pipeline
 
 from final_pipeline.utils.attribute_presence import attribute_presence
 from final_pipeline.utils.llm_attributes_rating import import_pipe, batch_calculate_sentiment, batch_calculate_sentiment_fixed
 from final_pipeline.utils.data_cleaning import clean_data
 from final_pipeline.utils.anchor_similarity import anchor_similarity
+from final_pipeline.utils.overall_sentiment import get_overall_sentiment
 
 load_dotenv()
 
@@ -117,48 +116,13 @@ df_4 = anchor_similarity(
 model_id = "cardiffnlp/twitter-roberta-base-sentiment"
 local_dir = os.path.join(os.getcwd(), "final_pipeline/models/overall_sentiment")
 
-snapshot_download(
-    repo_id=model_id,
-    local_dir=local_dir,
-    local_dir_use_symlinks=False, 
-    token=None
+df_4["Overall_review_sentiment"] = get_overall_sentiment(
+    df=df_4, 
+    reviews_col_name="text", 
+    device=device, 
+    model_id=model_id, 
+    local_dir=local_dir
 )
-
-classifier = pipeline(
-    "sentiment-analysis",
-    model=local_dir,
-    top_k=None,
-    batch_size=32,
-    device=device,
-)
-
-final_label = {'LABEL_0': 'Negative', 'LABEL_1': 'Neutral', 'LABEL_2': 'Positive'}
-
-def process_results(raw_results):
-    continuous_scores = []
-    categorical_labels = []
-    
-    for result in raw_results:
-        scores = {res['label']: res['score'] for res in result}
-    
-        p_pos = scores.get('LABEL_2', 0.0)
-        p_neu = scores.get('LABEL_1', 0.0)
-        p_neg = scores.get('LABEL_0', 0.0)
-        
-        c_score = round((p_pos * 1) + (p_neu * 0) + (p_neg * -1),2)
-        continuous_scores.append(c_score)
-        
-        categorical_labels.append(result[0]['label'])
-        
-    return continuous_scores, categorical_labels
-
-texts = df_4["text"].tolist()
-raw_output = classifier(texts)
-
-c_scores, labels = process_results(raw_output)
-
-df_4["Overall_review_sentiment"] = c_scores
-
 
 ## 4. Satisfaction final
 
@@ -190,4 +154,3 @@ df_4.to_excel("./data/final_predictions/xlsx/pred_Study_4_reviews.xlsx")
 df_4.to_csv("./data/final_predictions/csv/pred_Study_4_reviews.csv")
 
 print("Dataset with predictions saved")
-
