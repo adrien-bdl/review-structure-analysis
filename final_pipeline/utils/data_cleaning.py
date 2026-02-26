@@ -19,11 +19,21 @@ def safe_detect(text):
 
 def clean_data(df, review_col):
 
-    df[review_col] = df[review_col].fillna("").astype(str)
+    # Remove rows where Review is NA, empty, or only whitespace
+    df = df[df[review_col].fillna("").str.strip() != ""].copy()
+    df[review_col] = df[review_col].astype(str)
 
-    df['ID'] = df.index.astype(int)
-    df['ID'] += 1  # Start IDs from 1 instead of 0
+    # Clean newline characters
+    df.loc[:, review_col] = df[review_col].str.replace(' \n', ' ', regex=False)
+    df.loc[:, review_col] = df[review_col].str.replace('\n', ' ', regex=False)
 
-    df['lang'] = df[review_col].apply(safe_detect)
+    # Add ID column
+    df.loc[:, "ID"] = range(1, len(df) + 1)
+    df["ID"] = df["ID"].astype(int)
+
+    # Detect language
+    df.loc[:, "lang"] = df[review_col].apply(safe_detect)
+
+    df = df.reset_index(drop=True)
 
     return df

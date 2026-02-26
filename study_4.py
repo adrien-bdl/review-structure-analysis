@@ -1,10 +1,9 @@
 import torch
-import time
 import pickle
 import pandas as pd
 import numpy as np
 from sentence_transformers import SentenceTransformer, util
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import os
 
 from final_pipeline.utils.attribute_presence import attribute_presence
@@ -13,7 +12,7 @@ from final_pipeline.utils.data_cleaning import clean_data
 from final_pipeline.utils.anchor_similarity import anchor_similarity
 from final_pipeline.utils.overall_sentiment import get_overall_sentiment
 
-load_dotenv()
+# load_dotenv()
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
@@ -36,29 +35,20 @@ embedding_model = SentenceTransformer(
     device=device
 )
 
-attribute_names = [
-    'Quality_and_taste_of_food',
-    'Cleanliness',
-    'Friendliness_of_staff',
-    'Value',
-    'Speed_of_service'
-]
-
-attr_example = [
-    "The coffee was better, Very good food there and drinks",
-    'Cleanliness',
-    'needs better people, Unfriendly staff, behavior, I called her and no help, Did she hear me? polite',
-    'Cheap, expensive, value for money',
-    'No waiting, Left me standing there, For how long should I stand there? Had to wait ten minutes'
-]
+attribute_anchors = {
+    'Quality_and_taste_of_food': "The coffee was better, Very good food there and drinks",
+    'Cleanliness': 'Cleanliness',
+    'Friendliness_of_staff': 'needs better people, Unfriendly staff, behavior, I called her and no help, Did she hear me? polite',
+    'Value': 'Cheap, expensive, value for money',
+    'Speed_of_service': 'No waiting, Left me standing there, For how long should I stand there? Had to wait ten minutes'
+}
 
 optimal_thresholds = [0.1929, 1, 0.1437, 0.3626, 0.2163]
 
 df_4 = attribute_presence(
     df=df_4, 
     reviews_col_name="text", 
-    attribute_names=attribute_names, 
-    attr_example=attr_example, 
+    attribute_anchors=attribute_anchors,
     embedding_model=embedding_model, 
     optimal_thresholds=optimal_thresholds
 )

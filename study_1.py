@@ -1,10 +1,9 @@
 import torch
-import time
 import pickle
 import pandas as pd
 import numpy as np
 from sentence_transformers import SentenceTransformer, util
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import os
 
 from final_pipeline.utils.attribute_presence import attribute_presence
@@ -13,7 +12,7 @@ from final_pipeline.utils.data_cleaning import clean_data
 from final_pipeline.utils.anchor_similarity import anchor_similarity
 from final_pipeline.utils.overall_sentiment import get_overall_sentiment
 
-load_dotenv()
+# load_dotenv()
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
@@ -36,29 +35,20 @@ embedding_model = SentenceTransformer(
     device=device
 )
 
-attribute_names = [
-    'cleaning_service_quality',
-    'order_packaging',
-    'communication_and_responsiveness',
-    'Driver_professionalism',
-    'Service_speed'
-]
-
-attr_example = [
-    "the cloths are nor ironed, My shirts came back wrinkled still, my order was to dryclean! All suits came back in dirty and smelly! Items have come back still dirty",
-    "The clean laundry came in a bag that had a smell. Even though it was inside a white plastic bag, reusing and mixing dirty bags to carry clean clothes is not ideal, i had specifically asked that all clothes be returned folded in individual plastic bags and they have been sent on hangers.",
-    "i received multiple emails asking if the quotation to clean my two dresses is approved as they were quoted at 120 dhs per dress and i replied to each message asking to proceed and finally my order was cancelled and items return. I have been issued a refund in both cases but could do without the hassle. i have contacted you and sent photos,  you offer a pathetic small credit",
-    "polite, your drivers are always super nice and very professional, drivers extremely friendly",
-    "slow, prompt, efficient, fast. took less than 24 hours, 2 days. I had a lot of delays. Very prompt pickup, collect and the delivery was ahead of schedule, hasn't arrived yet"
-]
+attribute_anchors = {
+    'cleaning_service_quality': "the cloths are nor ironed, My shirts came back wrinkled still, my order was to dryclean! All suits came back in dirty and smelly! Items have come back still dirty",
+    'order_packaging': "The clean laundry came in a bag that had a smell. Even though it was inside a white plastic bag, reusing and mixing dirty bags to carry clean clothes is not ideal, i had specifically asked that all clothes be returned folded in individual plastic bags and they have been sent on hangers.",
+    'communication_and_responsiveness': "i received multiple emails asking if the quotation to clean my two dresses is approved as they were quoted at 120 dhs per dress and i replied to each message asking to proceed and finally my order was cancelled and items return. I have been issued a refund in both cases but could do without the hassle. i have contacted you and sent photos,  you offer a pathetic small credit",
+    'Driver_professionalism': "polite, your drivers are always super nice and very professional, drivers extremely friendly",
+    'Service_speed': "slow, prompt, efficient, fast. took less than 24 hours, 2 days. I had a lot of delays. Very prompt pickup, collect and the delivery was ahead of schedule, hasn't arrived yet"
+}
 
 optimal_thresholds = [0.2094, 0.3296, 0.3485, 0.3290, 0.2749]
 
 df_1 = attribute_presence(
     df=df_1, 
     reviews_col_name="finalReview", 
-    attribute_names=attribute_names, 
-    attr_example=attr_example, 
+    attribute_anchors=attribute_anchors, 
     embedding_model=embedding_model, 
     optimal_thresholds=optimal_thresholds
 )

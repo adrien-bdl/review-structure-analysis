@@ -10,3 +10,5 @@ huggingface_hub
 transformers
 langdetect
 scikit-learn
+ipykernel
+matplotlib

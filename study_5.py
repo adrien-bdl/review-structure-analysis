@@ -1,10 +1,9 @@
 import torch
-import time
 import pickle
 import pandas as pd
 import numpy as np
 from sentence_transformers import SentenceTransformer, util
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 import os
 
 from final_pipeline.utils.attribute_presence import attribute_presence
@@ -13,7 +12,7 @@ from final_pipeline.utils.data_cleaning import clean_data
 from final_pipeline.utils.anchor_similarity import anchor_similarity
 from final_pipeline.utils.overall_sentiment import get_overall_sentiment
 
-load_dotenv()
+# load_dotenv()
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
@@ -36,29 +35,20 @@ embedding_model = SentenceTransformer(
     device=device
 )
 
-attribute_names = [
-    'Cleanliness_and_maintenance',
-    'Waiting_and_queuing_times',
-    'Quality_of_exhibits',
-    'Quantity_of_exhibits',
-    'Helfpulness_of_staff'
-]
-
-attr_example = [
-    "hot, air conditioning and ventilation not working, dirty, escalator not working",
-    'huge crowd, this is overwhelming wiht long queues, hope it is was less busy',
-    'No guide, interactive, clear detailed description and information, nice visit, educational for kids, learning, well-organized',
-    'different exhibits, a lot plenty to see, many things',
-    'cashier, unfriendly, helpful staff'
-]
+attribute_anchors = {
+    'Cleanliness_and_maintenance': "hot, air conditioning and ventilation not working, dirty, escalator not working",
+    'Waiting_and_queuing_times': 'huge crowd, this is overwhelming wiht long queues, hope it is was less busy',
+    'Quality_of_exhibits': 'No guide, interactive, clear detailed description and information, nice visit, educational for kids, learning, well-organized',
+    'Quantity_of_exhibits': 'different exhibits, a lot plenty to see, many things',
+    'Helfpulness_of_staff': 'cashier, unfriendly, helpful staff'
+}
 
 optimal_thresholds = [0.2199, 0.3116, 0.2020, 0.5533, 0.6707]
 
 df_5 = attribute_presence(
     df=df_5, 
     reviews_col_name="Review", 
-    attribute_names=attribute_names, 
-    attr_example=attr_example, 
+    attribute_anchors=attribute_anchors, 
     embedding_model=embedding_model, 
     optimal_thresholds=optimal_thresholds
 )

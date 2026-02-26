@@ -19,6 +19,7 @@ This research comprises three distinct studies examining review structures acros
 | Study | Context | Description |
 |-------|---------|-------------|
 | **Study 1** | Dry Cleaning App | Analysis of reviews from a mobile dry cleaning service application |
+| **Study 3** | Hotel | Analysis of guest stays and service quality from hotel reviews |
 | **Study 4** | Café | Analysis of reviews from a café experience |
 | **Study 5** | Museum | Analysis of reviews from a museum visit |
 
@@ -77,3 +78,28 @@ We have groundtruth scores that have been created by hand. So we can train a reg
 - ensemble models: very prone to overfitting 
 
 ---
+
+## Getting started
+
+Create a virtual environment and install dependencies
+```
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+Run the main analysis scripts from the root directory
+```
+python study_1.py
+```
+Datasets are located in `data/initial_data/`, Results are saved to `data/final_predictions/`
+
+## Project Structure
+
+```
+├── final_pipeline/      # Clean code for the selected methods and models
+├── data/                # Raw datasets and processed outputs (CSV/XLSX)
+├── sandbox/             # Research notebooks for experimentation
+├── study_*.py           # Execution scripts for specific studies
+└── requirements.txt     # Project dependencies
+```
