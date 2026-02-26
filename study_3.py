@@ -155,10 +155,7 @@ df_3["Overall_review_sentiment"] = get_overall_sentiment(
 
 ## 4. Satisfaction final
 
-# with open('final_pipeline/models/satisfaction_final/ridge_model_study_1.pkl', 'rb') as f:
-#     clf_1 = pickle.load(f)
-
-with open('final_pipeline/models/satisfaction_final/ridge_model_weighted_study_1.pkl', 'rb') as f:
+with open('final_pipeline/models/satisfaction_final/ridge_model_study_3.pkl', 'rb') as f:
     clf_1_weighted = pickle.load(f)
 
 X = embedding_model.encode(
